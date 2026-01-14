@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rx3Llqqt8UaGueuFy5X5JQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="csdentalconnect.com/main.php" CVScreenId="0455b91f-2b38-4908-b1d9-228252d96e4b" DesignTimeRectangle="349, 620, 279, 57" ElementType="Text" FullSelectorArgument="&lt;webctrl id='login' tag='A' href='https://csdentalconnect.com/login.php' /&gt;" Guid="22cdc732-70ab-46f5-8d29-a15c4e5e7778" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d5a7c36a053b51effa15e8d9f2a22a01.png" xmlns="">0COEOMUjzEEWWe0Ih1_o5tg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,2123 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Development",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "CDI_DispatcherInputFile",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "queue",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Development",
+          "isExpression": false,
+          "displayName": "Folder Path"
+        },
+        "name": {
+          "defaultValue": "IOS_Cases",
+          "isExpression": false,
+          "displayName": "Queue name"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "bucket",
+      "metadata": {
+        "name": {
+          "defaultValue": "Config",
+          "isExpression": false,
+          "displayName": "Storage Bucket Name"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "667c3059-6ea9-43f2-92a3-e57b1910c954",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "e09a6470-c13a-4825-9f5a-26b431b1541c",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "true",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-box-box",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Upload File",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "b287985f-ddd1-4cef-ae9f-a268b40ba588",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Production",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "667c3059-6ea9-43f2-92a3-e57b1910c954",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Production",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Production",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots",
+          "isExpression": false,
+          "displayName": "Orchestrator folder path"
+        },
+        "name": {
+          "defaultValue": "Test_Labocast_AccessToken",
+          "isExpression": false,
+          "displayName": "Asset Name"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Production",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Production",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dentix_Env",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "DSCore_State",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dentix_Env",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "DSCore_Status",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dentix_Env",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "IOS_MailAccounts",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Itero_MailFrom",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dexis_MailFrom",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_DSCore_MailFrom",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dexis_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Itero_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dscore_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_CareStream_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkAGYwZDg1MjIBLWZlM2ItNDJiYy05NTEzLTNmYzkyOTFlZmJmNwAuAAADYCsuxmt6LkOBuEWSnllXfwEAEmf1apBa0kyDXH2XEWQXZQAAAcbKYwAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "queue",
+      "metadata": {
+        "name": {
+          "defaultValue": "IOS_Cases",
+          "isExpression": false,
+          "displayName": "Queue name"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADA3MWJmODJhLTNkYWEtNGFmZS05NWFiLWMyNzZjZWUyY2I1MwAuAAAAAACqUFTAfG1BRoPoJKmrIhvCAQD1VajhngI8R4D53PQkNA6OAAAAAAEMAAA=",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Postvak IN",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADg5OTY2NzE1LWFkNmQtNDRmNi04MWJmLTM3YjNhNWVjNDg2ZgAuAAAAAAB2k7upDwkHSIOZEclUZ5v8AQC0_M3GvTyXT6TpyLEJT3TGAAAAAAEMAAA=",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkAGJmM2Y4NWMxLWM5NTItNDk3NC1iNWJiAC01ODBjNzUwZThhNGIALgAAA5iruVxvgtdEs9mh63e2IgoBAIoLvVVF1jVOt9Qsyn2q1IsAAAIBDAAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkADRjNzg0OWNjAC01ZjY4LTRhNDAtYWNlZC05Njc5MTQ5MTM3OTgALgAAA_2qGtyFFGZHlYnC2E8a-ogBAKYQ7aTYKaxEhLk94WSBICkAAAIBDAAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "752928a1-0afe-487c-9a74-6ae3b10b9c9e",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkADg1ZjM5YWI5LTAyOWMtNDgyNi1hMTc2LWRjOWI5Y2FkM2FiOQAuAAADHq6Te4IxnEavCDKklpjZUQEAKdu56aROnEaDYJALqvzBSQAAAgEMAAAA",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.752928a1-0afe-487c-9a74-6ae3b10b9c9e",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "IOS_MailAccounts",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dexis_MailFrom",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Itero_MailFrom",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dexis_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_DSCore_MailFrom",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Itero_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_Dscore_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "name": {
+          "defaultValue": "General_CareStream_Regex",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkAGYwZDg1MjIBLWZlM2ItNDJiYy05NTEzLTNmYzkyOTFlZmJmNwAuAAADYCsuxmt6LkOBuEWSnllXfwEAEmf1apBa0kyDXH2XEWQXZQAAAcbKYwAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Terminé/iTero",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkAGYwZDg1MjIyLWZlM2ItNDJiYy05NTEzLTNmYzkyOTFlZmJmNwAuAAAAAABgKy7Ga3ouQ4G4RZKeWVd-AQBLnioqxUPDSq-sH71aTH_WAAFySp4_AAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Terminé/Dexis",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkAGYwZDg1MjIyLWZlM2ItNDJiYy05NTEzLTNmYzkyOTFlZmJmNwAuAAAAAABgKy7Ga3ouQ4G4RZKeWVd-AQBLnioqxUPDSq-sH71aTH_WAAInOw2xAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Terminé/DSCore",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkAGYwZDg1MjIyLWZlM2ItNDJiYy05NTEzLTNmYzkyOTFlZmJmNwAuAAAAAABgKy7Ga3ouQ4G4RZKeWVd-AQBLnioqxUPDSq-sH71aTH_WAAMhk_SDAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.33083c47-50a3-417f-838f-6951d519d49a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADA3MWJmODJhLTNkYWEtNGFmZS05NWFiLWMyNzZjZWUyY2I1MwAuAAAAAACqUFTAfG1BRoPoJKmrIhvCAQD1VajhngI8R4D53PQkNA6OAAAAAAEMAAA=",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/iTero",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADA3MWJmODJhLTNkYWEtNGFmZS05NWFiLWMyNzZjZWUyY2I1MwAuAAAAAACqUFTAfG1BRoPoJKmrIhvCAQD1VajhngI8R4D53PQkNA6OAAAAABMKAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/Dexis",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADA3MWJmODJhLTNkYWEtNGFmZS05NWFiLWMyNzZjZWUyY2I1MwAuAAAAAACqUFTAfG1BRoPoJKmrIhvCAQD1VajhngI8R4D53PQkNA6OAAGI9VCKAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/DSCore",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADA3MWJmODJhLTNkYWEtNGFmZS05NWFiLWMyNzZjZWUyY2I1MwAuAAAAAACqUFTAfG1BRoPoJKmrIhvCAQD1VajhngI8R4D53PQkNA6OAAJxfK0CAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.837b85d3-43fc-40d9-8144-a5def9e53a91",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Postvak IN",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADg5OTY2NzE1LWFkNmQtNDRmNi04MWJmLTM3YjNhNWVjNDg2ZgAuAAAAAAB2k7upDwkHSIOZEclUZ5v8AQC0_M3GvTyXT6TpyLEJT3TGAAAAAAEMAAA=",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Postvak IN/Afgehandeld/iTero",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADg5OTY2NzE1LWFkNmQtNDRmNi04MWJmLTM3YjNhNWVjNDg2ZgAuAAAAAAB2k7upDwkHSIOZEclUZ5v8AQC0_M3GvTyXT6TpyLEJT3TGAAADobcBAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Postvak IN/Afgehandeld/Dexis",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADg5OTY2NzE1LWFkNmQtNDRmNi04MWJmLTM3YjNhNWVjNDg2ZgAuAAAAAAB2k7upDwkHSIOZEclUZ5v8AQC0_M3GvTyXT6TpyLEJT3TGAAENf_49AAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Postvak IN/Afgehandeld/DSCore",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADg5OTY2NzE1LWFkNmQtNDRmNi04MWJmLTM3YjNhNWVjNDg2ZgAuAAAAAAB2k7upDwkHSIOZEclUZ5v8AQC0_M3GvTyXT6TpyLEJT3TGAAOAx9YsAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.04ad88dc-2c50-452e-817c-e558df3f228a",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkAGJmM2Y4NWMxLWM5NTItNDk3NC1iNWJiAC01ODBjNzUwZThhNGIALgAAA5iruVxvgtdEs9mh63e2IgoBAIoLvVVF1jVOt9Qsyn2q1IsAAAIBDAAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/iTero",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkAGJmM2Y4NWMxLWM5NTItNDk3NC1iNWJiLTU4MGM3NTBlOGE0YgAuAAAAAACYq7lcb4LXRLPZoet3tiIKAQCKC71VRdY1TrfULMp9qtSLAAAAXczLAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/Dexis",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkAGJmM2Y4NWMxLWM5NTItNDk3NC1iNWJiLTU4MGM3NTBlOGE0YgAuAAAAAACYq7lcb4LXRLPZoet3tiIKAQCKC71VRdY1TrfULMp9qtSLAAIvM7gYAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/DSCore",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkAGJmM2Y4NWMxLWM5NTItNDk3NC1iNWJiLTU4MGM3NTBlOGE0YgAuAAAAAACYq7lcb4LXRLPZoet3tiIKAQCKC71VRdY1TrfULMp9qtSLAAHFrf2TAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.8141a8ec-e058-42ba-ba79-fa8218ef71c5",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkADRjNzg0OWNjAC01ZjY4LTRhNDAtYWNlZC05Njc5MTQ5MTM3OTgALgAAA_2qGtyFFGZHlYnC2E8a-ogBAKYQ7aTYKaxEhLk94WSBICkAAAIBDAAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Done/iTero",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADRjNzg0OWNjLTVmNjgtNGE0MC1hY2VkLTk2NzkxNDkxMzc5OAAuAAAAAADtqhrchRRmR5WJwthPGv6IAQCmEO2k2CmsRIS5PeFkgSApAAAh9tD1AAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Done/Dexis/CS CONNECT",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADRjNzg0OWNjLTVmNjgtNGE0MC1hY2VkLTk2NzkxNDkxMzc5OAAuAAAAAADtqhrchRRmR5WJwthPGv6IAQCmEO2k2CmsRIS5PeFkgSApAAAr3kwiAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Done/DSCore",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AAMkADRjNzg0OWNjLTVmNjgtNGE0MC1hY2VkLTk2NzkxNDkxMzc5OAAuAAAAAADtqhrchRRmR5WJwthPGv6IAQCmEO2k2CmsRIS5PeFkgSApAAG8B0MZAAA=",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.fb7417d1-f0bf-4611-a0ca-af46c02295b3",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "752928a1-0afe-487c-9a74-6ae3b10b9c9e",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkADg1ZjM5YWI5LTAyOWMtNDgyNi1hMTc2LWRjOWI5Y2FkM2FiOQAuAAADHq6Te4IxnEavCDKklpjZUQEAKdu56aROnEaDYJALqvzBSQAAAgEMAAAA",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.752928a1-0afe-487c-9a74-6ae3b10b9c9e",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/iTero",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkADg1ZjM5YWI5LTAyOWMtNDgyNi1hMTc2LWRjOWI5Y2FkM2FiOQAuAAADHq6Te4IxnEavCDKklpjZUQEAKdu56aROnEaDYJALqvzBSQAAAgEsAAAA",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.752928a1-0afe-487c-9a74-6ae3b10b9c9e",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox/Afgehandeld/DSCore",
+          "isExpression": false,
+          "displayName": "To email folder",
+          "description": "The folder where to move the email"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkADg1ZjM5YWI5LTAyOWMtNDgyNi1hMTc2LWRjOWI5Y2FkM2FiOQAuAAADHq6Te4IxnEavCDKklpjZUQEAKdu56aROnEaDYJALqvzBSQACxJxWJQAAAA==",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "Move Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.752928a1-0afe-487c-9a74-6ae3b10b9c9e",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "asset",
+      "metadata": {
+        "folderPath": {
+          "defaultValue": "IOS Robots/Development",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "DSCore_Labocast_AccessToken",
+          "isExpression": false
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "SolutionsSupport": {
+          "defaultValue": "true",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "defaultValue": "e3c7950d-5dd1-41ce-9e11-b19a85b92db0",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.2",
+          "isExpression": false
+        },
+        "Connector": {
+          "defaultValue": "uipath-microsoft-outlook365",
+          "isExpression": false
+        },
+        "UseConnectionService": {
+          "defaultValue": "True",
+          "isExpression": false,
+          "displayName": "Use Integration Service",
+          "description": "Uses the Integration Service to authenticate to the service"
+        }
+      }
+    },
+    {
+      "resource": "Property",
+      "metadata": {
+        "parentFolderName": {
+          "defaultValue": "Inbox",
+          "isExpression": false,
+          "displayName": "In email folder",
+          "description": "The folder to get emails from"
+        },
+        "parentFolderId": {
+          "defaultValue": "AQMkAGYwZDg1MjIBLWZlM2ItNDJiYy05NTEzLTNmYzkyOTFlZmJmNwAuAAADYCsuxmt6LkOBuEWSnllXfwEAEmf1apBa0kyDXH2XEWQXZQAAAcbKYwAAAA==",
+          "isExpression": false,
+          "displayName": "Email Folder",
+          "description": "The Outlook email folder to get emails from"
+        },
+        "BindingsVersion": {
+          "defaultValue": "2.1",
+          "isExpression": false
+        },
+        "ActivityName": {
+          "defaultValue": "For Each Email",
+          "isExpression": false
+        },
+        "ObjectName": {
+          "defaultValue": "Message",
+          "isExpression": false
+        },
+        "DisplayLabel": {
+          "defaultValue": "parentFolderName",
+          "isExpression": false
+        },
+        "ParentResourceKey": {
+          "defaultValue": "Connection.e3c7950d-5dd1-41ce-9e11-b19a85b92db0",
+          "isExpression": false
+        }
+      }
+    }
+  ]
+}

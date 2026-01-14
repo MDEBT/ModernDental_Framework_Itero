@@ -1,0 +1,428 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Dexis_Login" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_PathConfig" Type="InArgument(x:String)" />
+    <x:Property Name="io_dictScreenElements" Type="InOutArgument(scg:Dictionary(x:String, ui:UiElement))" />
+    <x:Property Name="in_Country" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Dexis_Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Dexis_Login" sap:VirtualizedContainerService.HintSize="1529.6000000000001,4936" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Carestream" Name="Brand" />
+      <Variable x:TypeArguments="x:String" Name="ChromeProfile" />
+      <Variable x:TypeArguments="ui:UiElement" Name="ScreenElement" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="769.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start &quot;+Brand+&quot;_Login&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="769.6,4402.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence sap2010:Annotation.AnnotationText="Check if an in out argument is empty, if it is empty then start a login sequence. If the value is not empty then check if the specific application, in a specific session is logged in. If it is not logged in then complete the login sequence" DisplayName="Login" sap:VirtualizedContainerService.HintSize="732.8,4139.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="ss:SecureString" Name="Password" />
+            <Variable x:TypeArguments="x:String" Name="Username" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[Not(io_dictScreenElements.ContainsKey(Brand+&quot;_&quot;+in_Country))]" DisplayName="If the in/out argument is empty" sap:VirtualizedContainerService.HintSize="699.2,4035.2" sap2010:WorkflowViewState.IdRef="If_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="665.6,3648" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FindChromeProfile - Invoke Workflow File (General\FindChromeProfile.xaml)" sap:VirtualizedContainerService.HintSize="632,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="General\FindChromeProfile.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Brand">[Brand]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Country">[in_Country]</InArgument>
+                    <OutArgument x:TypeArguments="x:String" x:Key="out_ChromeProfile">[ChromeProfile]</OutArgument>
+                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config" />
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="632,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Chrome Profile : &quot;+ ChromeProfile]" />
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="StartScreen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="632,3237.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" OutUiElement="[ScreenElement]" ScopeGuid="5be71507-10d2-4a9b-b13e-d2580dd10a89" Version="V2" WindowResize="Maximize">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="598.4,2997.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="564.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Logging in to &quot;+Brand+&quot; &quot; +in_Country]" />
+                        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[Brand+&quot;_&quot; &amp; in_Country]" CacheStrategy="None" DisplayName="Get Credential - Dexis" FolderPath="IOS Robots/Production" sap:VirtualizedContainerService.HintSize="564.8,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Password]" Username="[Username]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="564.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Username : &quot;+Username]" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'access the service'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="564.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5be71507-10d2-4a9b-b13e-d2580dd10a89" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="csdentalconnect.com/main.php" CVScreenId="0455b91f-2b38-4908-b1d9-228252d96e4b" DesignTimeRectangle="349, 620, 279, 57" ElementType="Text" FullSelectorArgument="&lt;webctrl id='login' tag='A' href='https://csdentalconnect.com/login.php' /&gt;" Guid="22cdc732-70ab-46f5-8d29-a15c4e5e7778" InformativeScreenshot="d5a7c36a053b51effa15e8d9f2a22a01.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="564.8,2183.2" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                          <TryCatch.Try>
+                            <Sequence sap:VirtualizedContainerService.HintSize="528,1928.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:Boolean" Name="checkSession" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="2" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="5be71507-10d2-4a9b-b13e-d2580dd10a89" Text="[Username]" Timeout="5" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="login.csdental.com/csdentalb2c.onmicrosoft.com/b2c_1a_oauth_susi_basic_v2/oauth2/v2.0/authorize" CVScreenId="b3480870-72d2-49da-8eea-d44430e250e4" DesignTimeRectangle="742, 651, 435, 52" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='signInName' tag='INPUT' /&gt;" Guid="7420b7c4-7bdc-444b-85b6-bde4566429ce" InformativeScreenshot="e3626d5d3c6df6bc1103d40e47131ed2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Carestream Dental' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5be71507-10d2-4a9b-b13e-d2580dd10a89" Timeout="5" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="envistab2c.b2clogin.com/envistab2c.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize" CVScreenId="3fe36542-552d-4061-b90a-3d8efb11837e" ContentHash="rJyKpM_NBUq83h0VDlDYxg" DesignTimeRectangle="742, 723, 435, 60" ElementType="Button" FullSelectorArgument="&lt;webctrl id='next' tag='BUTTON' /&gt;" Guid="de562996-6edc-4859-97cc-14c977ca034f" InformativeScreenshot="9b3e34d4603a2c175997f23f621a8936.png" Reference="asTqoD1sAk2-CQVBddQccA/DzjUGRguyU-OzlRwlBfY1Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Carestream Dental' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382.4,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Waiting for create chrome seeting&quot;]" />
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="2" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="5be71507-10d2-4a9b-b13e-d2580dd10a89" SecureText="[Password]" Timeout="5" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="envistab2c.b2clogin.com/envistab2c.onmicrosoft.com/B2C_1A_signup_signin/api/SelfAsserted/confirmed" CVScreenId="b86573a5-a306-47f2-ba5e-a7403d0ad159" ContentHash="LgolHUkfC0Wlkbjwc3sabQ" DesignTimeRectangle="742, 594, 392, 52" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" Guid="5c57b164-b159-40bd-a14b-c68a02ecf444" InformativeScreenshot="c3a70e96485fc08a3a24487cc54be5b6.png" Reference="asTqoD1sAk2-CQVBddQccA/-rAU9oDMj0SEKXlq6gl_jA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Carestream Dental' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete">
+                                    <uix:TargetAnchorable.PointOffset>
+                                      <uix:PointOffset X="-5" Y="2" />
+                                    </uix:TargetAnchorable.PointOffset>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'To register'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="494.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5be71507-10d2-4a9b-b13e-d2580dd10a89" Timeout="5" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="envistab2c.b2clogin.com/envistab2c.onmicrosoft.com/B2C_1A_signup_signin/api/SelfAsserted/confirmed" CVScreenId="dd281c93-3b73-4984-803e-10423305bc62" DesignTimeRectangle="742, 708, 435, 60" ElementType="Button" FullSelectorArgument="&lt;webctrl id='next' tag='BUTTON' /&gt;" Guid="5c2ebacb-27a6-4c85-b7a7-8af19c8690dc" InformativeScreenshot="ebfc930b1edaa4d9b98cff0cf01a4ee5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Carestream Dental' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <TryCatch DisplayName="Try Catch - Checked for session" sap:VirtualizedContainerService.HintSize="494.4,786.4" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                <TryCatch.Try>
+                                  <ui:RetryScope DisplayName="Retry Scope - Checked for session" sap:VirtualizedContainerService.HintSize="457.6,532" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10" RetryInterval="00:00:02">
+                                    <ui:RetryScope.ActivityBody>
+                                      <ActivityAction>
+                                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'Session'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[checkSession]" ScopeIdentifier="5be71507-10d2-4a9b-b13e-d2580dd10a89" Timeout="5" Version="V5">
+                                            <uix:NCheckElement.Target>
+                                              <uix:TargetAnchorable BrowserURL="csdentalconnect.com/main.php" CVScreenId="66c7ff88-a97e-4add-beb7-51b0064c7fc9" ContentHash="XX4olBvz_EWep3HopowBug" DesignTimeRectangle="1677, 120, 60, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl id='sessionLink' tag='A' /&gt;" Guid="1f009ab7-6686-4066-8b8f-13886e775350" InformativeScreenshot="dd8a047af230bdada36c6d6861582256.png" Reference="KS1pCQkBfUiIxIHYYg9xKQ/ddX0YDlv_0qtHeF585JOvA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete" />
+                                            </uix:NCheckElement.Target>
+                                          </uix:NCheckElement>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </ui:RetryScope.ActivityBody>
+                                    <ui:RetryScope.Condition>
+                                      <ActivityFunc x:TypeArguments="x:Boolean">
+                                        <ui:CheckTrue DisplayName="Check True" ErrorMessage="No logged in" Expression="[checkSession]" sap:VirtualizedContainerService.HintSize="333.6,131.2" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                                      </ActivityFunc>
+                                    </ui:RetryScope.Condition>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:RetryScope>
+                                </TryCatch.Try>
+                                <TryCatch.Catches>
+                                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="460.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ActivityAction x:TypeArguments="s:Exception">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                      </ActivityAction.Argument>
+                                      <Throw Exception="[New SystemException(&quot;Login Issue please check&quot;)]" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                                    </ActivityAction>
+                                  </Catch>
+                                </TryCatch.Catches>
+                              </TryCatch>
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="531.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                        </TryCatch>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-9, -9, 1938, 1158" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="402a8d2886997b5fed5942d03919f52b.jpg" Selector="&lt;html app='chrome.exe' url='https://csdentalconnect.com/main.php' /&gt;" Url="https://csdentalconnect.com/main.php" Version="V2" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Trace" Message="[io_dictScreenElements(Brand+&quot;_&quot;+in_Country)]" />
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="736,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Throw DisplayName="Throw - No Order Found" Exception="[New BusinessRuleException(&quot;Failed to Login Dexis website &quot;+in_Country)]" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <Assign DisplayName="Assign - dictScreenElement" sap:VirtualizedContainerService.HintSize="769.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:UiElement">[io_dictScreenElements(Brand+"_"+in_Country)]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:UiElement">[ScreenElement]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="769.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;UiElement : &quot;+io_dictScreenElements(Brand+&quot;_&quot;+in_Country).get(&quot;url&quot;).ToString]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="769.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382.4,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Stop&quot;]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

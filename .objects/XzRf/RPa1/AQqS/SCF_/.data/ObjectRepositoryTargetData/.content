@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RBwp7gWsA0-R-eEi9HR1VQ" Reference="KS1pCQkBfUiIxIHYYg9xKQ/SCF_HUTP0U267Jnu3PL45w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/viewer-wrapper/rx/257430964/false" CVScreenId="d8ffe88b-1261-4de8-b6a8-24fc648862e0" CvElementArea="1031, 628, 169, 43" CvTextArea="1090, 640, 90, 18" CvType="Button" DesignTimeRectangle="1032, 629, 167, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='modal-lab-export' tag='DIV' innertext='Télécharger*Télécharger' parentclass='modal-content' /&gt;&lt;webctrl id='export-btn' tag='BUTTON' parentid='modal-lab-export' /&gt;" Guid="1d478099-3b86-42e8-9422-7add98375046" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="d8ffe88b-1261-4de8-b6a8-24fc648862e0" DesignTimeRectangle="1092, 639, 89, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='modal-lab-export' tag='DIV' innertext='Télécharger*Télécharger' parentclass='modal-content' /&gt;&lt;webctrl id='export-btn' tag='BUTTON' parentid='modal-lab-export' /&gt;" Guid="1dd8bd74-fc99-496b-a94d-8d28abc28eec" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="71aaed55da708bdbb477268f93bdaddf.png" xmlns="">0sfWXskXbVEaCx4BN8je_xg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

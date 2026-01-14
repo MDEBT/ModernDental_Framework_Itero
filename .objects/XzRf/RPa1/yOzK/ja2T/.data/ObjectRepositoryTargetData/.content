@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VhZCZgyYNkSOFb78BuM6Ag" Reference="KS1pCQkBfUiIxIHYYg9xKQ/ja2TdOe10Uqa_8AQounU_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="13f0b54b-7d94-436f-b9b8-222eeff7874a" DesignTimeRectangle="606, 182, 142, 73" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl id='caseId' tag='H1' parentclass='detailMode' visibleinnertext='&quot;+in_CaseName+&quot;' /&gt;&quot;]" Guid="e4c4d5c1-5737-495a-8aa4-d9799b96f824" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="da207d37184c4a302674d688af84d0a6.png" xmlns="">0AK_m9UezlUW3YGWYJv8Ppg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

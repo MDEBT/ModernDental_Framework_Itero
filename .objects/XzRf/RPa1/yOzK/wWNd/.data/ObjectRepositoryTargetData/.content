@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YacFA_t4mkes3826_FBMUg" Reference="KS1pCQkBfUiIxIHYYg9xKQ/wWNdPxEG4kG64p2W7-nwiA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="9b22a3b4-af3f-47ec-bab4-2219fb2097cd" DesignTimeRectangle="1392, 425, 505, 22" FullSelectorArgument="&lt;webctrl id='caseAcqDate' tag='TIME' /&gt;" Guid="0a274c39-d20b-4e94-ad2b-013e1e1e3cf8" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS IS Connect v1.2' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="7d45b2be45292b5dc20b0161d774cb31.png" xmlns="">0rLdnxYEj10ygfN4eo7vjwg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

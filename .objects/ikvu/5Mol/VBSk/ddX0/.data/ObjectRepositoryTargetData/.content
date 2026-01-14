@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XX4olBvz_EWep3HopowBug" Reference="KS1pCQkBfUiIxIHYYg9xKQ/ddX0YDlv_0qtHeF585JOvA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="csdentalconnect.com/main.php" CVScreenId="66c7ff88-a97e-4add-beb7-51b0064c7fc9" DesignTimeRectangle="1677, 120, 60, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl id='sessionLink' tag='A' /&gt;" Guid="1f009ab7-6686-4066-8b8f-13886e775350" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CS*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd8a047af230bdada36c6d6861582256.png" xmlns="">0quPnSsHLuEiAZeMMPCogDw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

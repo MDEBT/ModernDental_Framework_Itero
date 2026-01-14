@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_L1Q2F1xIk-5tceyOLeZTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/viewer-wrapper/rx/257430964/false" CVScreenId="d97ed777-b210-4d0c-bdd6-5f891cd8478c" CvElementArea="1642, 143, 223, 43" CvTextArea="1702, 156, 141, 17" CvTextArgument="Download Scan" CvType="Button" DesignTimeRectangle="1644, 145, 219, 40" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='download-scans-btn' tag='BUTTON' type='' class='eup-button' aaname='Download Scan' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Download Scan' /&gt;" Guid="5867c72e-a839-4334-8d6f-c9b91a8b960b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Viewer · My iTero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d97ed777-b210-4d0c-bdd6-5f891cd8478c" DesignTimeRectangle="1704, 155, 140, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl class='eup-button__btn-text' parentid='download-scans-btn' tag='SPAN' parentclass='eup-button' /&gt;" Guid="9d680584-fa03-4599-b68f-f7fc21e0106f" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2fdc4bd8b0026c16dcf66005ad7921a7.png" xmlns="">0b4BCBPr8oEKbjgzUcjEBOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

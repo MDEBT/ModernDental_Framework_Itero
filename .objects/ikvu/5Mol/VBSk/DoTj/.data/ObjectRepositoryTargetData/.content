@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YRJYMPC5tUGsr_l8Lr1qWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.csdental.com/csdentalb2c.onmicrosoft.com/b2c_1a_oauth_susi_basic_v2/oauth2/v2.0/authorize" CVScreenId="b3480870-72d2-49da-8eea-d44430e250e4" DesignTimeRectangle="742, 651, 435, 52" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='signInName' tag='INPUT' /&gt;" Guid="7420b7c4-7bdc-444b-85b6-bde4566429ce" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Carestream Dental' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e3626d5d3c6df6bc1103d40e47131ed2.png" xmlns="">0-3Wy-yihDkqRQlJiERZz6A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

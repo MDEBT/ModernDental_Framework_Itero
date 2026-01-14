@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Download Scan",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ozugXKrYe0CicRNnlf7Ydw",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/ozugXKrYe0CicRNnlf7Ydw",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/AQqSTWElyUq-CGFpoRJkWg",
+  "Created": "2025-08-28T19:28:47.0487177Z",
+  "Updated": "2025-08-28T19:28:47.0487177Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

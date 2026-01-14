@@ -1,0 +1,124 @@
+{
+  "name": "ModernDental_Framework_Itero",
+  "projectId": "400e29ea-d099-4e66-be3e-aa43fc55ef73",
+  "description": "Framework for Modern Dental IOS process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Login_DScoreAuthActivity": "[70.0.0]",
+    "UiPath.Database.Activities": "[1.10.1]",
+    "UiPath.DataService.Activities": "[25.2.0]",
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.IntegrationService.Activities": "[1.16.0]",
+    "UiPath.Mail.Activities": "[2.1.20]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.2.10]",
+    "UiPath.PDF.Activities": "[3.22.1]",
+    "UiPath.System.Activities": "25.4.2",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.8]",
+    "UiPath.WebAPI.Activities": "[1.21.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.161.0",
+  "projectVersion": "1.0.104",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fc95bb94-fb0e-4b49-a73f-892d8b0ae0a4",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "309f4b37-5f91-4860-9e5b-c482ec1ccbf7",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "4ddeeb5d-6210-49ca-9018-13c73fd9974d",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6905cf70-5724-4d00-9a63-f08b3a09b4c1",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "82470038-6c18-485a-a558-a7b763756d9a",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e3b19aaa-f5ba-438f-bb3c-d8dcdd45debe",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "c2a9ef8d-58c3-40a5-914b-f8bd78fbc403",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Dispatcher.xaml",
+      "uniqueId": "a85d13fc-9757-4517-9493-49e69859db1f",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Dispatcher_CDISwden\\Dispatcher_Cdi.xaml",
+      "uniqueId": "d89ba6e1-ee0d-43f8-93ff-d7d63f932b08",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

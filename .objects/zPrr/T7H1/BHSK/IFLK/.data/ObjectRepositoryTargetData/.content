@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1blRXw44TU6DeLOoN2joWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="e08c76fb-a751-4ab7-9025-d6ac619514a8" DesignTimeRectangle="1349, 204, 240, 46" ElementType="DropDown" FullSelectorArgument="&lt;ctrl idx='2' name='DEXIS IS Connect v1.2' role='document' /&gt;&lt;ctrl name='Destination' role='combo box' /&gt;" Guid="d1b6ac2e-7b41-4f84-9161-23d70c6b04f9" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='DEXIS IS Connect v1.2 - Google Chrome' /&gt;" SearchSteps="Selector" SelectionStrategy="AA" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e08c76fb-a751-4ab7-9025-d6ac619514a8" DesignTimeRectangle="1169, 215, 82, 23" ElementType="Text" FullSelectorArgument="&lt;ctrl idx='2' name='DEXIS IS Connect v1.2' role='document' /&gt;&lt;ctrl name='Destination' role='text' /&gt;" Guid="92368149-263e-4358-9cb8-d10d12616926" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f06d132a40fd752972cb8cd2be1dd0b1.png" xmlns="">0mrWRdx6ufEqgSKwmB3MasQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

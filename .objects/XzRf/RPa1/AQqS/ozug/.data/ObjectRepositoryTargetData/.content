@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zyqqG39Ef0eVFtygN-fnQQ" Reference="KS1pCQkBfUiIxIHYYg9xKQ/ozugXKrYe0CicRNnlf7Ydw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/viewer-wrapper/rx/257430964/false" CVScreenId="9381e122-a52b-41da-a86c-6d585f19335e" DesignTimeRectangle="0, 0, 1938, 1158" ElementType="Button" FullSelectorArgument="&lt;webctrl id='download-scans-btn' tag='BUTTON' class='eup-button' parentclass='download-scans-btn' /&gt;" Guid="53be5631-6ac7-4c4c-aa1c-82c1f7cb477b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9381e122-a52b-41da-a86c-6d585f19335e" DesignTimeRectangle="1644, 145, 219, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl id='download-scans-btn' tag='BUTTON' class='eup-button' parentclass='download-scans-btn' /&gt;" Guid="9eccc9dd-ad2e-4d75-962b-65364c44d87b" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5994e279dacd2c24b859907b2dfd9450.png" xmlns="">0bcxP9zUbFk24w8TsplqfmQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

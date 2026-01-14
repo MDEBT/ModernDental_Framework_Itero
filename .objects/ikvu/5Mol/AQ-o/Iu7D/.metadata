@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Comment patiente 8794z…",
+  "Type": "Element",
+  "Id": "Iu7DFnoSEkmJdjelPlGfGQ",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/Iu7DFnoSEkmJdjelPlGfGQ",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/AQ-oSu0_REGdvPdJk5ogZg",
+  "Created": "2025-07-20T08:41:43.2063236Z",
+  "Updated": "2025-07-20T08:41:43.2063236Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

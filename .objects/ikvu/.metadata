@@ -1,0 +1,12 @@
+﻿{
+  "Name": "StartScreen",
+  "Type": "App",
+  "Id": "ikvuB36MM02N7oEr9iv95w",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/ikvuB36MM02N7oEr9iv95w",
+  "Created": "2025-07-09T13:00:27.9536198Z",
+  "Updated": "2025-07-09T13:00:27.9536198Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

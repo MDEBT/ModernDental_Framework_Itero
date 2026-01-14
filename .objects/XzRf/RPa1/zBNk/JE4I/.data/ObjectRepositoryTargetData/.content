@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XRQBbFy8aka17m4hWrjr5Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="9e2921a5-aed4-4443-8e0d-369204733bbc" DesignTimeRectangle="1561, 144, 47, 47" FullSelectorArgument="&lt;webctrl id='logoutImage' tag='A' /&gt;" Guid="af8aa7a2-ba3d-4f3f-8476-a555e70b64a5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b2e931aeb38b41611b0146d3bbdbd2ad.png" xmlns="">0nZiaXNH8gkm6Lg-l2VX9vQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mETgHMnciUy00gM6HYdPXQ" Reference="KS1pCQkBfUiIxIHYYg9xKQ/0cuPXdSxzUiPXf6TiqFjfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/labs/home" DesignTimeRectangle="9, 117, 1920, 1032" FullSelectorArgument="&lt;webctrl tag='MAIN' /&gt;" Guid="a509ef97-62bd-4c07-8ea4-26c8777a21ce" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ddd0fa41a27615000054f6b8659d8de5.png" xmlns="">0G_PXnjJA4EaBxAXAATNi3Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

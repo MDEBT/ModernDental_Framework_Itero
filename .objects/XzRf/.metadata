@@ -1,0 +1,12 @@
+﻿{
+  "Name": "OrderScreen(1)",
+  "Type": "App",
+  "Id": "XzRfaSTUj0eNJ0QuE7dkvA",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/XzRfaSTUj0eNJ0QuE7dkvA",
+  "Created": "2025-07-15T13:03:47.3399149Z",
+  "Updated": "2025-07-15T13:03:47.3399149Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

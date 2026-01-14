@@ -1,0 +1,13 @@
+﻿{
+  "Name": "BUTTON btn-search",
+  "Type": "Element",
+  "Id": "VtFz4AFJLEKWI26LlODohA",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/VtFz4AFJLEKWI26LlODohA",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/zBNkRDnhWkqXApZS2nIVzw",
+  "Created": "2025-08-15T13:54:59.0954517Z",
+  "Updated": "2025-08-15T13:54:59.0954517Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

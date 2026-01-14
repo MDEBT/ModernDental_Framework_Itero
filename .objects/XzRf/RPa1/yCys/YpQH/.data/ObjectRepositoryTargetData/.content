@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4x_OjmFAh0ObiUVfD8KcUw" Reference="KS1pCQkBfUiIxIHYYg9xKQ/YpQHmWgxSEOpIDgZnMnH8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="b6a7006c-0e6d-4030-90d5-d7bc64845461" DesignTimeRectangle="1363, 392, 136, 62" ElementType="Text" FullSelectorArgument="&lt;webctrl class='col-due-date' tableRow='1' tag='TD' parentclass='*' /&gt;" Guid="85180a7d-68bf-4799-b15a-85c0b2d4c362" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="28aed393eec929b772a36f1b01dc73a9.png" xmlns="">0AZBo3UiDp0S7tDmZK97Z-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

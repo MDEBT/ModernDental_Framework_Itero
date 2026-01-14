@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Session",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ddX0YDlv_0qtHeF585JOvA",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/ddX0YDlv_0qtHeF585JOvA",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/VBSkBgeUaUuo2Idcpl7aKw",
+  "Created": "2025-11-06T11:01:47.45124Z",
+  "Updated": "2025-11-06T11:01:47.45124Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

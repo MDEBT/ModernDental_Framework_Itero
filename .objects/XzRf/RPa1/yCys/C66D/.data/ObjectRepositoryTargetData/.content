@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b9K93P0af0e8SbPT1zY6qA" Reference="KS1pCQkBfUiIxIHYYg9xKQ/C66DZXkOwUKh4IRR_GMB6g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="de190381-5ae5-4ca4-b754-2b88501378e9" CvTextArea="1497, 414, 102, 17" CvTextArgument="Downloaded" CvType="Text" DesignTimeRectangle="1499, 392, 194, 62" FullSelectorArgument="&lt;webctrl id='ViewRxButton' tableRow='1' tag='LI' /&gt;" Guid="1fafc949-b8af-4332-8f24-31a317c54b7f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*iTero' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f1c829d697204454a65f8b550d779ce3.png" xmlns="">0-Y10bVLqRU6OhxpXiGB-fg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

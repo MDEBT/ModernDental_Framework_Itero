@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Prothèse amovible",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gJaR1rvAmkqxO4PR5DuR0g",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/gJaR1rvAmkqxO4PR5DuR0g",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/yCysXrZODkiEQcbSpK2jEg",
+  "Created": "2025-08-28T18:17:01.3105713Z",
+  "Updated": "2025-08-28T18:17:01.3105713Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

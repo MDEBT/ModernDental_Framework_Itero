@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tDr_OKe2qEytxpr8e3Ix9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="260bc5c4-6c77-4cdf-b511-96e33c311108" DesignTimeRectangle="1850, 456, 60, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl id='printAction' tag='A' onclick='window.print()' /&gt;" Guid="959815bf-073d-47c8-9428-8b3f79d4aded" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DEXIS IS Connect v1.2' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="36b4fe9a567b7376a2f446afc64845b3.png" xmlns="">0WgWy_MEIIECy4lApKlihuQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

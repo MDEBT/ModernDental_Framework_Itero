@@ -1,0 +1,3 @@
+namespace ModernDental_Framework
+{
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hNNNbGbI-kKoKHLAMIK0mg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="myaccount-us.aligntech.com/u/login" CVScreenId="929ef4db-0bcf-4fd5-96fa-bad1117a8a21" CvElementArea="806, 544, 323, 56" CvType="InputBox" DesignTimeRectangle="809, 546, 274, 52" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='input cc88028e5 c4dff3ed6' aaname='                             Password                                                        *                           ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="fd185e2a-6e27-4bcb-91e7-d2766bea0590" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myaccount-us.aligntech.com/u/login?state=hKFo2SByMHkwRXRZbG5QSjRPRlYtTUxTVGF3RG56ekNoTXBOa6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHBSdXNDOEZYM1Z6NzFlZlZlWkZLbVFMSVMwZDNPb0VDo2NpZNkgYlhZTW1BTXRNYjFnNUw4UVBjZUd5NVN1dDRIUFpRelg&amp;amp;ui_locales=en-US' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="929ef4db-0bcf-4fd5-96fa-bad1117a8a21" CvElementArea="806, 544, 323, 56" CvType="InputBox" DesignTimeRectangle="825, 563, 91, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='password-label' tag='LABEL' /&gt;" Guid="512d4e6a-4f50-40d0-9809-7f1358f9ee1f" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d446f84b6953ad6d7ba9a4e315804c79.png" xmlns="">0A6IB3IzIx0yY-Zmfk7l0tg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

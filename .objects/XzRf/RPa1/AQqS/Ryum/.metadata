@@ -1,0 +1,14 @@
+﻿{
+  "Name": "3Shape",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "RyumUeT-C0ORKvfEiYGVMg",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/RyumUeT-C0ORKvfEiYGVMg",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/AQqSTWElyUq-CGFpoRJkWg",
+  "Created": "2025-08-28T19:04:12.11853Z",
+  "Updated": "2025-08-28T19:04:12.11853Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9xGJBl2nl0mg_qiVtb0nhQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/viewer-wrapper/rx/257457607/false" CVScreenId="e3553a7f-e4e8-42f3-ae6c-26bfb451ba59" CvElementArea="737, 452, 463, 57" CvType="InputBox" DesignTimeRectangle="739, 454, 460, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='cadCamSystem-options' tag='BUTTON' type='' class='dropdown-button' aaname='3Shape' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='3Shape' /&gt;" Guid="65a62310-03a8-4452-9089-1dbd3dd3f720" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Viewer · My iTero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e3553a7f-e4e8-42f3-ae6c-26bfb451ba59" DesignTimeRectangle="739, 414, 149, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='modal-lab-export' tag='LABEL' /&gt;" Guid="8673271c-1220-478f-9357-aabf34ce7ebc" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ffe1cd381921ca18dcd0751897e4b31f.png" xmlns="">0Gcl4D_bGQkecRwB_K9tB7Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

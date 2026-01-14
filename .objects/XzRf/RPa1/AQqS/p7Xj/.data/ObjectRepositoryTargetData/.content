@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kMaiYfNsiEGVWjrfGKP5RA" Reference="KS1pCQkBfUiIxIHYYg9xKQ/p7XjRvqCoUy-YUzUcYkQjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/viewer-wrapper/rx/257457607/false" CVScreenId="46ffa11f-3244-4527-ad56-73d2f2bd7b1e" CvElementArea="1031, 628, 170, 43" CvTextArea="1090, 640, 90, 18" CvTextArgument="Download" CvType="Button" DesignTimeRectangle="1030, 627, 170, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='export-btn' tag='BUTTON' type='' class='eup-button' aaname='Download' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Download' /&gt;" Guid="e29d91fd-38cc-41bc-b089-682b843ce804" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Viewer · My iTero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="46ffa11f-3244-4527-ad56-73d2f2bd7b1e" DesignTimeRectangle="1032, 629, 167, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl id='export-btn' tag='BUTTON' class='eup-button' parentclass='text-right export-footer' parentid='modal-lab-export' /&gt;" Guid="8ecf1b97-4aa7-4cde-92d3-c4027b148a02" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="90484df95072d42a0711ecf00d5933f3.png" xmlns="">0juCjEby13U2XHm9tryfv0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

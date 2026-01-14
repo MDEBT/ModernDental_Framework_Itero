@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yNfbNs6RyEGW5EIVub94qA" Reference="KS1pCQkBfUiIxIHYYg9xKQ/9sK06CkVd0Wu32PiwlK9Qw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pre-login-app-prod-eu-central-1.iterocloud.com/pre-login" CVScreenId="6db70ee9-aa65-4d96-84ca-21b508314f9c" DesignTimeRectangle="738, 743, 462, 69" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-pre-login-submit' tag='BUTTON' /&gt;" Guid="bab7dbbe-1358-43dd-9981-95d8024a6114" ScopeSelectorArgument="&lt;html app='chrome.exe' title='pre-login-app' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8fb9fd5ff0263003a8e5795f1d2d6005.png" xmlns="">0IsPMDOa8Z0CSZwIwU-iYHA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

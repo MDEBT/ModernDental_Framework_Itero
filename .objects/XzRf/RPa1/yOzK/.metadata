@@ -1,0 +1,13 @@
+﻿{
+  "Name": "OrderScreen(1)",
+  "Type": "Screen",
+  "Id": "yOzKPN3wX0WnwNFqAX_x3Q",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/yOzKPN3wX0WnwNFqAX_x3Q",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/RPa1ONN9UUa0vNOWh1_xsA",
+  "Created": "2025-07-15T13:03:47.7251989Z",
+  "Updated": "2025-07-15T13:03:47.7251989Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

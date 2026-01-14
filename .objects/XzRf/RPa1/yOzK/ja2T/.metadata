@@ -1,0 +1,14 @@
+﻿{
+  "Name": "NGP-5098",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ja2TdOe10Uqa_8AQounU_Q",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/ja2TdOe10Uqa_8AQounU_Q",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/yOzKPN3wX0WnwNFqAX_x3Q",
+  "Created": "2025-07-15T13:53:10.37712Z",
+  "Updated": "2025-07-15T13:53:10.37712Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,1548 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Itero_Login" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Country" Type="InArgument(x:String)" />
+    <x:Property Name="io_dictScreenElements" Type="InOutArgument(scg:Dictionary(x:String, ui:UiElement))" />
+    <x:Property Name="argument1" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Itero_Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>UiPath.Workflow.Runtime.Statements</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Text</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
+      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
+      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Java.Activities</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Itero_Login" sap:VirtualizedContainerService.HintSize="1223.2,12958.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Itero" Name="Brand" />
+      <Variable x:TypeArguments="x:String" Name="ChromeProfile" />
+      <Variable x:TypeArguments="ui:UiElement" Name="ScreenElement" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1020.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Start Itero_Login&quot;]" />
+    <Sequence sap2010:Annotation.AnnotationText="Check if an in out argument is empty, if it is empty then start a login sequence. If the value is not empty then check if the specific application, in a specific session is logged in. If it is not logged in then complete the login sequence" sap:VirtualizedContainerService.HintSize="1020.8,12481.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ss:SecureString" Name="Password" />
+        <Variable x:TypeArguments="x:String" Name="Username" />
+        <Variable x:TypeArguments="x:Boolean" Name="elementExist" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If Condition="[Not(io_dictScreenElements.ContainsKey(Brand+&quot;_&quot;+in_Country))]" DisplayName="If the in/out argument is empty" sap:VirtualizedContainerService.HintSize="987.2,12345.6" sap2010:WorkflowViewState.IdRef="If_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="953.6,7940.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FindChromeProfile - Invoke Workflow File (General\FindChromeProfile.xaml)" sap:VirtualizedContainerService.HintSize="920,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="General\FindChromeProfile.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Brand">[Brand]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Country">[in_Country]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_ChromeProfile">[ChromeProfile]</OutArgument>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="920,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;ChromeProfile : &quot;+ChromeProfile]" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="LoginScreen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="920,7530.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" OpenMode="Always" OutUiElement="[ScreenElement]" ScopeGuid="808f4946-a536-424b-b9bb-e70ef2380505" Version="V2" WindowResize="Maximize">
+              <uix:NApplicationCard.AutoGenerationOptions>
+                <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                  <uix:GenerationOptions.ExpectedOutputs>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:Null />
+                    </scg:List>
+                  </uix:GenerationOptions.ExpectedOutputs>
+                </uix:GenerationOptions>
+              </uix:NApplicationCard.AutoGenerationOptions>
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="886.4,7290.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="checkLogout" />
+                      <Variable x:TypeArguments="x:Boolean" Name="checkSession" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="852.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[&quot;Logging in to Itero &quot; &amp; in_Country]" />
+                    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[&quot;Itero_&quot; &amp; in_Country]" CacheStrategy="None" DisplayName="Get Credential - Itero" FolderPath="IOS Robots/Production" sap:VirtualizedContainerService.HintSize="852.8,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_3" Password="[Password]" Username="[Username]" />
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="852.8,432" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="382.4,107.2" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V5" />
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="852.8,829.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="416,566.4" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Private: Type Email ID Pre login" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Text="[Username]" Timeout="5" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="pre-login-app-prod-eu-central-1.iterocloud.com/pre-login" CVScreenId="fe0485b8-ca5a-46fc-87f5-4268e1fc2887" ContentHash="mUlzgETbbkKalM2vkw6BQg" DesignTimeRectangle="738, 647, 462, 66" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='input-pre-login-email' tag='INPUT' /&gt;" Guid="8d1a76e6-e199-4f3f-ba4f-ff83df2389e3" InformativeScreenshot="716990e8f2d5f03a259c13e49f0c40a4.png" Reference="KS1pCQkBfUiIxIHYYg9xKQ/mzC2m2c990Cm2JccafHsnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='pre-login-app' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Prelogin" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Timeout="5" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="pre-login-app-prod-eu-central-1.iterocloud.com/pre-login" CVScreenId="6db70ee9-aa65-4d96-84ca-21b508314f9c" ContentHash="yNfbNs6RyEGW5EIVub94qA" DesignTimeRectangle="738, 743, 462, 69" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-pre-login-submit' tag='BUTTON' /&gt;" Guid="bab7dbbe-1358-43dd-9981-95d8024a6114" InformativeScreenshot="8fb9fd5ff0263003a8e5795f1d2d6005.png" Reference="KS1pCQkBfUiIxIHYYg9xKQ/9sK06CkVd0Wu32PiwlK9Qw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='pre-login-app' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[&quot;No Prelogin Page&quot;]" />
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="852.8,219.2" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                      <TryCatch.Try>
+                        <uix:NCheckElement DelayBefore="0" DisplayName="Check Element 'A logoutImage'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NCheckElement_1" Result="[checkSession]" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Timeout="10" Version="V5">
+                          <uix:NCheckElement.Target>
+                            <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="9e2921a5-aed4-4443-8e0d-369204733bbc" DesignTimeRectangle="1561, 144, 47, 47" FullSelectorArgument="&lt;webctrl id='logoutImage' tag='A' /&gt;" Guid="af8aa7a2-ba3d-4f3f-8476-a555e70b64a5" InformativeScreenshot="b2e931aeb38b41611b0146d3bbdbd2ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                          </uix:NCheckElement.Target>
+                        </uix:NCheckElement>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_16">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[checkSession]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <If Condition="[checkSession]" sap:VirtualizedContainerService.HintSize="852.8,5233.6" sap2010:WorkflowViewState.IdRef="If_9">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,227.2" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,167.2" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Trace" Message="[&quot;Already Login&quot;]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="819.2,4836" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="785.6,517.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Text="[Username]" Timeout="5" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="e79cbe63-cc07-49d3-a685-a1959fbcab02" ContentHash="saS119xrZkuaRq84Xi4kTw" DesignTimeRectangle="637, 498, 665, 57" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' name='LoginControl$UserName' type='email' /&gt;" Guid="ee0745d3-cd59-4b93-8121-72ef769bcf76" InformativeScreenshot="d38a1bfa9e1af83100ade130f48d551c.png" Reference="asTqoD1sAk2-CQVBddQccA/4MHal2Xi8UCp5iuymqEwuA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Already Filled it&quot;]" />
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="785.6,56.8" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" SecureText="[Password]" Timeout="3" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="f2976f25-76ca-4ca6-a333-3d757a97b57d" ContentHash="lHLl1Ye9mkSivCcZHnZ6sQ" DesignTimeRectangle="637, 574, 665, 58" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' name='LoginControl$Password' /&gt;" Guid="ced87528-b553-4fdd-938b-4f84115bc8f5" InformativeScreenshot="50ed2cb9f515b6203fe372e6c39b2fd1.png" Reference="asTqoD1sAk2-CQVBddQccA/i_0LLdLtk0O9FaRmtN_HBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into 'Password *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,254.4" sap2010:WorkflowViewState.IdRef="NTypeInto_21" InteractionMode="DebuggerApi" IsPassword="True" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" SecureText="[Password]" Version="V5">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="myaccount-us.aligntech.com/u/login" CVScreenId="bf964adb-1fb4-4e26-8dd2-cf8319368456" CvElementArea="806, 544, 323, 56" CvType="InputBox" DesignTimeRectangle="809, 546, 274, 52" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='input cc88028e5 c4dff3ed6' aaname='                             Password                                                        *                           ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="b0ca8806-d4bd-4558-9f49-54dd67baa5e2" InformativeScreenshot="d446f84b6953ad6d7ba9a4e315804c79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myaccount-us.aligntech.com/u/login?state=*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="bf964adb-1fb4-4e26-8dd2-cf8319368456" DesignTimeRectangle="825, 563, 91, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl id='password-label' tag='LABEL' /&gt;" Guid="09feac4b-4aea-4890-85bf-d057dfb94b3e" SearchSteps="Selector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <uix:NTypeInto.VerifyOptions>
+                                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      </uix:VerifyExecutionTypeIntoOptions>
+                                    </uix:NTypeInto.VerifyOptions>
+                                  </uix:NTypeInto>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="785.6,56.8" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click Login" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fcbf6b4-eba0-49b6-b8b7-68cbe9e0ad1e" InformativeScreenshot="1443d824f2095297df4fd5588de79601" Selector="&lt;webctrl id='btn-login' tag='INPUT' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
+                                </ui:Click.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Click>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="333.6,193.6" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Version="V5">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="myaccount-us.aligntech.com/u/login" CVScreenId="bf964adb-1fb4-4e26-8dd2-cf8319368456" DesignTimeRectangle="808, 660, 320, 52" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="8f826c42-8602-46d4-91c3-5c29824034fe" InformativeScreenshot="beb8bdedd2ae004cd470dd53b7e08a33.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myaccount-us.aligntech.com/u/login?state=hKFo2SByMHkwRXRZbG5QSjRPRlYtTUxTVGF3RG56ekNoTXBOa6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHBSdXNDOEZYM1Z6NzFlZlZlWkZLbVFMSVMwZDNPb0VDo2NpZNkgYlhZTW1BTXRNYjFnNUw4UVBjZUd5NVN1dDRIUFpRelg&amp;amp;ui_locales=en-US' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <Sequence DisplayName="Sequence - Check For Login" sap:VirtualizedContainerService.HintSize="785.6,4144.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Int32" Name="CheckCounter" />
+                              <Variable x:TypeArguments="x:Boolean" Name="CheckLogout" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign DisplayName="Assign Counter" sap:VirtualizedContainerService.HintSize="752,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[CheckCounter]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="752,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[CheckLogout]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CheckCounter = 5]" DisplayName="Do While - Check Logout button" sap:VirtualizedContainerService.HintSize="752,3834.4" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                              <ui:InterruptibleDoWhile.Body>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="718.4,3696.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:UiElementExists DisplayName="Element Exists 'A  logoutImage'" Exists="[CheckLogout]" sap:VirtualizedContainerService.HintSize="684.8,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4691907a-4010-4c9e-9fa7-db8d74ba8afa" InformativeScreenshot="cd78f8589025a49f24c65ad6848ec651" Selector="&lt;html app='chrome.exe' title='*My iTero' /&gt;&lt;webctrl id='logoutImage' tag='A' /&gt;" TimeoutMS="10000" WaitForReady="COMPLETE" />
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684.8,176" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Trace" Message="[CheckLogout.ToString]" />
+                                  <If Condition="[CheckLogout = True]" sap:VirtualizedContainerService.HintSize="684.8,3321.6" sap2010:WorkflowViewState.IdRef="If_4">
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[CheckLogout]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="651.2,2995.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="617.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[CheckLogout]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign DisplayName="Assign Counter" sap:VirtualizedContainerService.HintSize="617.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Int32">[CheckCounter]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Int32">[CheckCounter+1]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <If Condition="[CheckCounter &gt; 5]" sap:VirtualizedContainerService.HintSize="617.6,2708" sap2010:WorkflowViewState.IdRef="If_3">
+                                          <If.Then>
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Throw Exception="[New Exception(&quot;Not Login Correctly&quot;)]" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="584,2372.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="x:Boolean" Name="CheckLogoutInside" />
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:UiElementExists DisplayName="Element Exists 'A  logoutImage'" Exists="[CheckLogoutInside]" sap:VirtualizedContainerService.HintSize="550.4,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                                                <ui:UiElementExists.Target>
+                                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4691907a-4010-4c9e-9fa7-db8d74ba8afa" InformativeScreenshot="cd78f8589025a49f24c65ad6848ec651" Selector="&lt;webctrl id='logoutImage' tag='A' /&gt;" TimeoutMS="10000" WaitForReady="COMPLETE" />
+                                                </ui:UiElementExists.Target>
+                                              </ui:UiElementExists>
+                                              <If Condition="[CheckLogoutInside]" sap:VirtualizedContainerService.HintSize="550.4,2173.6" sap2010:WorkflowViewState.IdRef="If_5">
+                                                <If.Then>
+                                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:Break sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                                  </Sequence>
+                                                </If.Then>
+                                                <If.Else>
+                                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="516.8,1904" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <Sequence sap:VirtualizedContainerService.HintSize="483.2,1844" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="LoginScreen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="449.6,260" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InUiElement="[ScreenElement]" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="a54d7f7c-b60f-46e1-9c20-90791b853a6b" Version="V2" WindowResize="Maximize">
+                                                        <uix:NApplicationCard.AutoGenerationOptions>
+                                                          <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                                                            <uix:GenerationOptions.ExpectedOutputs>
+                                                              <scg:List x:TypeArguments="x:String" Capacity="4">
+                                                                <x:Null />
+                                                              </scg:List>
+                                                            </uix:GenerationOptions.ExpectedOutputs>
+                                                          </uix:GenerationOptions>
+                                                        </uix:NApplicationCard.AutoGenerationOptions>
+                                                        <uix:NApplicationCard.Body>
+                                                          <ActivityAction x:TypeArguments="x:Object">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="416,91.2" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                                              <Sequence.Variables>
+                                                                <Variable x:TypeArguments="x:Boolean" Name="CheckLogout" />
+                                                              </Sequence.Variables>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </uix:NApplicationCard.Body>
+                                                        <uix:NApplicationCard.TargetApp>
+                                                          <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" ContentHash="92QkqyuHaE6hxmKW-ReNwA" IconBase64="e73835327c446bba30c1d7cbfe6e36be86007fdd2ca1caaec6854672730d1092" InformativeScreenshot="ff3f20b404a94b2b9b02e55a0e6b76d1.jpg" Reference="asTqoD1sAk2-CQVBddQccA/ca7UbyfpQUuxKXPPrWx1eg" Selector="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" Version="V1" />
+                                                        </uix:NApplicationCard.TargetApp>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </uix:NApplicationCard>
+                                                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="LoginScreen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="449.6,1452.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="Simulate" OpenMode="Always" OutUiElement="[ScreenElement]" ScopeGuid="cad140dc-94e8-4d38-b177-ce8cbd9fc989" Version="V2" WindowResize="Maximize">
+                                                        <uix:NApplicationCard.AutoGenerationOptions>
+                                                          <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                                                            <uix:GenerationOptions.ExpectedOutputs>
+                                                              <scg:List x:TypeArguments="x:String" Capacity="4">
+                                                                <x:Null />
+                                                              </scg:List>
+                                                            </uix:GenerationOptions.ExpectedOutputs>
+                                                          </uix:GenerationOptions>
+                                                        </uix:NApplicationCard.AutoGenerationOptions>
+                                                        <uix:NApplicationCard.Body>
+                                                          <ActivityAction x:TypeArguments="x:Object">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="416,1204" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[&quot;Logging in to Itero &quot; &amp; in_Country]" />
+                                                              <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[&quot;Itero_&quot; &amp; in_Country]" CacheStrategy="None" DisplayName="Get Credential - Itero" FolderPath="IOS Robots" sap:VirtualizedContainerService.HintSize="382.4,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_7" Password="[Password]" Username="[Username]" />
+                                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="cad140dc-94e8-4d38-b177-ce8cbd9fc989" Text="[Username]" Version="V4">
+                                                                <uix:NTypeInto.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="e79cbe63-cc07-49d3-a685-a1959fbcab02" ContentHash="saS119xrZkuaRq84Xi4kTw" DesignTimeRectangle="637, 498, 665, 57" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' name='LoginControl$UserName' type='email' /&gt;" Guid="ee0745d3-cd59-4b93-8121-72ef769bcf76" InformativeScreenshot="d38a1bfa9e1af83100ade130f48d551c.png" Reference="asTqoD1sAk2-CQVBddQccA/4MHal2Xi8UCp5iuymqEwuA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                                                </uix:NTypeInto.Target>
+                                                                <uix:NTypeInto.VerifyOptions>
+                                                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                      <InArgument x:TypeArguments="x:Double" />
+                                                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                  </uix:VerifyExecutionTypeIntoOptions>
+                                                                </uix:NTypeInto.VerifyOptions>
+                                                              </uix:NTypeInto>
+                                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="cad140dc-94e8-4d38-b177-ce8cbd9fc989" SecureText="[Password]" Version="V4">
+                                                                <uix:NTypeInto.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="f2976f25-76ca-4ca6-a333-3d757a97b57d" ContentHash="lHLl1Ye9mkSivCcZHnZ6sQ" DesignTimeRectangle="637, 574, 665, 58" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' name='LoginControl$Password' /&gt;" Guid="ced87528-b553-4fdd-938b-4f84115bc8f5" InformativeScreenshot="50ed2cb9f515b6203fe372e6c39b2fd1.png" Reference="asTqoD1sAk2-CQVBddQccA/i_0LLdLtk0O9FaRmtN_HBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                                                </uix:NTypeInto.Target>
+                                                                <uix:NTypeInto.VerifyOptions>
+                                                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                      <InArgument x:TypeArguments="x:Double" />
+                                                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                                  </uix:VerifyExecutionTypeIntoOptions>
+                                                                </uix:NTypeInto.VerifyOptions>
+                                                              </uix:NTypeInto>
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cad140dc-94e8-4d38-b177-ce8cbd9fc989" Version="V4">
+                                                                <uix:NClick.Target>
+                                                                  <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="1640247b-bb2d-4756-95f5-2ac4927a7b51" ContentHash="MVjoq_DR0UqWPuPFHP31ig" DesignTimeRectangle="1399, 537, 155, 58" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-login' tag='INPUT' /&gt;" Guid="9487a487-04d5-4108-8154-117e21fd7f33" InformativeScreenshot="c7b5fddbf22eb1a6dd12878a2236a5b3.png" IsResponsive="True" Reference="asTqoD1sAk2-CQVBddQccA/N0JqObxK-ECbZDJEs4uD-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" />
+                                                                </uix:NClick.Target>
+                                                                <uix:NClick.VerifyOptions>
+                                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                    <uix:VerifyExecutionOptions.Retry>
+                                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                                    </uix:VerifyExecutionOptions.Retry>
+                                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                                      <InArgument x:TypeArguments="x:Double" />
+                                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                                  </uix:VerifyExecutionOptions>
+                                                                </uix:NClick.VerifyOptions>
+                                                              </uix:NClick>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </uix:NApplicationCard.Body>
+                                                        <uix:NApplicationCard.TargetApp>
+                                                          <uix:TargetApp Area="-9, -9, 1938, 1158" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" BrowserType="Chrome" ContentHash="92QkqyuHaE6hxmKW-ReNwA" IconBase64="e73835327c446bba30c1d7cbfe6e36be86007fdd2ca1caaec6854672730d1092" InformativeScreenshot="ff3f20b404a94b2b9b02e55a0e6b76d1.jpg" Reference="asTqoD1sAk2-CQVBddQccA/ca7UbyfpQUuxKXPPrWx1eg" Selector="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" Url="https://bff.cloud.myitero.com/login-legacy" Version="V1" />
+                                                        </uix:NApplicationCard.TargetApp>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </uix:NApplicationCard>
+                                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                                                        <ui:CommentOut.Body>
+                                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="9b7dd08a-a1cf-4fe4-8856-cc1e46220257" Version="V2">
+                                                              <uix:NApplicationCard.Body>
+                                                                <ActivityAction x:TypeArguments="x:Object">
+                                                                  <ActivityAction.Argument>
+                                                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                                  </ActivityAction.Argument>
+                                                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1052.8,620" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                                                    <sap:WorkflowViewStateService.ViewState>
+                                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                      </scg:Dictionary>
+                                                                    </sap:WorkflowViewStateService.ViewState>
+                                                                    <uix:NCheckState DisplayName="Check if the specific application in a specific session is logged in" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1019.2,560" sap2010:WorkflowViewState.IdRef="NCheckState_4" OutUiElement="[ScreenElement]" Timeout="3" Version="V4">
+                                                                      <uix:NCheckState.IfExists>
+                                                                        <Sequence sap:VirtualizedContainerService.HintSize="483.2,316.8" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,255.2" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                              </scg:Dictionary>
+                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Logged in to Itero &quot; &amp; in_Country]" />
+                                                                          </Sequence>
+                                                                        </Sequence>
+                                                                      </uix:NCheckState.IfExists>
+                                                                      <uix:NCheckState.IfNotExists>
+                                                                        <Sequence sap:VirtualizedContainerService.HintSize="483.2,176" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,116" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                              </scg:Dictionary>
+                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                          </Sequence>
+                                                                        </Sequence>
+                                                                      </uix:NCheckState.IfNotExists>
+                                                                      <uix:NCheckState.Target>
+                                                                        <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="4c125404-75e5-420f-b13d-534208f548fb" ContentHash="5SSi4Bm_zE2yzgS1WRaBMQ" CvElementArea="2199, 108, 51, 50" CvType="Icon" DesignTimeRectangle="2201, 110, 47, 47" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='logoutImage' parentclass='image-link-container' /&gt;" Guid="00f33090-6e53-43ec-9e25-284d41dbcbf9" ImageBase64="4130e937bb6cca6a4ddb9512804d1ac867337fcb65560443d57e80ba74038b5a" InformativeScreenshot="df8ff46bb84d0f972ce63b87107ad045.png" Reference="asTqoD1sAk2-CQVBddQccA/bAjjTo0o3EiIsCVNX7V1iQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard \xB7 My iTero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                                                      </uix:NCheckState.Target>
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                    </uix:NCheckState>
+                                                                  </Sequence>
+                                                                </ActivityAction>
+                                                              </uix:NApplicationCard.Body>
+                                                              <uix:NApplicationCard.TargetApp>
+                                                                <uix:TargetApp Area="0, 0, 0, 0" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" Selector="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" Url="https://bff.cloud.myitero.com/login-legacy" Version="V1" />
+                                                              </uix:NApplicationCard.TargetApp>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </uix:NApplicationCard>
+                                                          </Sequence>
+                                                        </ui:CommentOut.Body>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </ui:CommentOut>
+                                                    </Sequence>
+                                                  </Sequence>
+                                                </If.Else>
+                                              </If>
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ui:InterruptibleDoWhile.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:InterruptibleDoWhile>
+                          </Sequence>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="852.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2" RetryInterval="00:00:02">
+                            <ui:RetryScope.ActivityBody>
+                              <ActivityAction>
+                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,190.4" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:UiElementExists DisplayName="Element Exists - Click button" Exists="[elementExist]" sap:VirtualizedContainerService.HintSize="382.4,130.4" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4b476518-f690-4e35-94c4-c21a69141f4b" InformativeScreenshot="f7c1cb4be5f3c83b76ae888799678598" Selector="&lt;webctrl id='btn-search' tag='BUTTON' /&gt;" TimeoutMS="2000">
+                                        <ui:Target.WaitForReady>
+                                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                                        </ui:Target.WaitForReady>
+                                      </ui:Target>
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:RetryScope.ActivityBody>
+                            <ui:RetryScope.Condition>
+                              <ActivityFunc x:TypeArguments="x:Boolean">
+                                <ui:UiElementExists DisplayName="Element Exists - Click button" Exists="[elementExist]" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                                  <ui:UiElementExists.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4b476518-f690-4e35-94c4-c21a69141f4b" InformativeScreenshot="f7c1cb4be5f3c83b76ae888799678598" Selector="&lt;webctrl id='btn-search' tag='BUTTON' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:UiElementExists.Target>
+                                </ui:UiElementExists>
+                              </ActivityFunc>
+                            </ui:RetryScope.Condition>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:RetryScope>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="852.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click  Butteon'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Timeout="10" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/labs/home" ContentHash="DpK872nGpkOw4ESj-AkH9Q" DesignTimeRectangle="1002, 189, 85, 38" FullSelectorArgument="&lt;webctrl id='btn-search' tag='BUTTON' /&gt;" Guid="ca2e3f8d-67e0-4573-b9a6-1290495a7b59" InformativeScreenshot="2768259bff4047b1aaa2edbb30a17499.png" Reference="KS1pCQkBfUiIxIHYYg9xKQ/VtFz4AFJLEKWI26LlODohA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="852.8,49.6" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="483.2,109.6" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Middle" ScopeIdentifier="808f4946-a536-424b-b9bb-e70ef2380505" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="1640247b-bb2d-4756-95f5-2ac4927a7b51" ContentHash="MVjoq_DR0UqWPuPFHP31ig" DesignTimeRectangle="1399, 537, 155, 58" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-login' tag='INPUT' /&gt;" Guid="9487a487-04d5-4108-8154-117e21fd7f33" InformativeScreenshot="c7b5fddbf22eb1a6dd12878a2236a5b3.png" IsResponsive="True" Reference="asTqoD1sAk2-CQVBddQccA/N0JqObxK-ECbZDJEs4uD-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1158" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" BrowserType="Chrome" ContentHash="RuKkmwP5DUe-DNRFF_P1gQ" IconBase64="e73835327c446bba30c1d7cbfe6e36be86007fdd2ca1caaec6854672730d1092" InformativeScreenshot="ff3f20b404a94b2b9b02e55a0e6b76d1.jpg" Reference="KS1pCQkBfUiIxIHYYg9xKQ/zBNkRDnhWkqXApZS2nIVzw" Selector="&lt;html app='chrome.exe' url='https://bff.cloud.myitero.com/login?returnUrl=%2Flabs%2Fhome' /&gt;" Url="https://bff.cloud.myitero.com/login?returnUrl=%2Flabs%2Fhome" Version="V1" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="819.2,4243.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Sequence - Check For Login" sap:VirtualizedContainerService.HintSize="785.6,4183.2" sap2010:WorkflowViewState.IdRef="Sequence_58">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="CheckCounter" />
+                <Variable x:TypeArguments="x:Boolean" Name="CheckLogout" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="Assign Counter" sap:VirtualizedContainerService.HintSize="752,113.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[CheckCounter]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="752,113.6" sap2010:WorkflowViewState.IdRef="Assign_12">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[CheckLogout]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CheckCounter = 5]" DisplayName="Do While - Check Logout button" sap:VirtualizedContainerService.HintSize="752,3872.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+                <ui:InterruptibleDoWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="718.4,3735.2" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="Element Exists 'A  logoutImage'" Exists="[CheckLogout]" sap:VirtualizedContainerService.HintSize="684.8,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4691907a-4010-4c9e-9fa7-db8d74ba8afa" InformativeScreenshot="cd78f8589025a49f24c65ad6848ec651" Selector="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;&lt;webctrl id='logoutImage' tag='A' /&gt;" TimeoutMS="10000" WaitForReady="COMPLETE" />
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[CheckLogout.ToString]" />
+                    <If Condition="[CheckLogout = True]" sap:VirtualizedContainerService.HintSize="684.8,3361.6" sap2010:WorkflowViewState.IdRef="If_8">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_13">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[CheckLogout]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="651.2,3035.2" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="617.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[CheckLogout]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign DisplayName="Assign Counter" sap:VirtualizedContainerService.HintSize="617.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_15">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[CheckCounter]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[CheckCounter+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <If Condition="[CheckCounter &gt; 5]" sap:VirtualizedContainerService.HintSize="617.6,2748" sap2010:WorkflowViewState.IdRef="If_7">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Throw Exception="[New Exception(&quot;Not Login Correctly&quot;)]" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="584,2412.8" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:Boolean" Name="CheckLogoutInside" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:UiElementExists DisplayName="Element Exists 'A  logoutImage'" Exists="[CheckLogoutInside]" sap:VirtualizedContainerService.HintSize="550.4,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
+                                  <ui:UiElementExists.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4691907a-4010-4c9e-9fa7-db8d74ba8afa" InformativeScreenshot="42bc03e386475dd5b874de530a752b74" Selector="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;&lt;webctrl id='logoutImage' tag='A' /&gt;" TimeoutMS="10000" WaitForReady="COMPLETE" />
+                                  </ui:UiElementExists.Target>
+                                </ui:UiElementExists>
+                                <If Condition="[CheckLogoutInside]" sap:VirtualizedContainerService.HintSize="550.4,2213.6" sap2010:WorkflowViewState.IdRef="If_6">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:Break sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="516.8,1944" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="483.2,1884" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="LoginScreen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="449.6,260" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InUiElement="[ScreenElement]" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="a54d7f7c-b60f-46e1-9c20-90791b853a6b" Version="V2" WindowResize="Maximize">
+                                          <uix:NApplicationCard.AutoGenerationOptions>
+                                            <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                                              <uix:GenerationOptions.ExpectedOutputs>
+                                                <scg:List x:TypeArguments="x:String" Capacity="4">
+                                                  <x:Null />
+                                                </scg:List>
+                                              </uix:GenerationOptions.ExpectedOutputs>
+                                            </uix:GenerationOptions>
+                                          </uix:NApplicationCard.AutoGenerationOptions>
+                                          <uix:NApplicationCard.Body>
+                                            <ActivityAction x:TypeArguments="x:Object">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="416,91.2" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:Boolean" Name="CheckLogout" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </uix:NApplicationCard.Body>
+                                          <uix:NApplicationCard.TargetApp>
+                                            <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" ContentHash="92QkqyuHaE6hxmKW-ReNwA" IconBase64="e73835327c446bba30c1d7cbfe6e36be86007fdd2ca1caaec6854672730d1092" InformativeScreenshot="ff3f20b404a94b2b9b02e55a0e6b76d1.jpg" Reference="asTqoD1sAk2-CQVBddQccA/ca7UbyfpQUuxKXPPrWx1eg" Selector="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" Version="V1" />
+                                          </uix:NApplicationCard.TargetApp>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NApplicationCard>
+                                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="LoginScreen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="449.6,1492.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" InteractionMode="Simulate" OpenMode="Always" OutUiElement="[ScreenElement]" ScopeGuid="cad140dc-94e8-4d38-b177-ce8cbd9fc989" Version="V2" WindowResize="Maximize">
+                                          <uix:NApplicationCard.AutoGenerationOptions>
+                                            <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+                                              <uix:GenerationOptions.ExpectedOutputs>
+                                                <scg:List x:TypeArguments="x:String" Capacity="4">
+                                                  <x:Null />
+                                                </scg:List>
+                                              </uix:GenerationOptions.ExpectedOutputs>
+                                            </uix:GenerationOptions>
+                                          </uix:NApplicationCard.AutoGenerationOptions>
+                                          <uix:NApplicationCard.Body>
+                                            <ActivityAction x:TypeArguments="x:Object">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="416,1204" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_16" Message="[&quot;Logging in to Itero &quot; &amp; in_Country]" />
+                                                <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[&quot;Itero_&quot; &amp; in_Country]" CacheStrategy="None" DisplayName="Get Credential - Itero" FolderPath="IOS Robots" sap:VirtualizedContainerService.HintSize="382.4,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_8" Password="[Password]" Username="[Username]" />
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="cad140dc-94e8-4d38-b177-ce8cbd9fc989" Text="[Username]" Version="V4">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="e79cbe63-cc07-49d3-a685-a1959fbcab02" ContentHash="saS119xrZkuaRq84Xi4kTw" DesignTimeRectangle="637, 498, 665, 57" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' name='LoginControl$UserName' type='email' /&gt;" Guid="ee0745d3-cd59-4b93-8121-72ef769bcf76" InformativeScreenshot="d38a1bfa9e1af83100ade130f48d551c.png" Reference="asTqoD1sAk2-CQVBddQccA/4MHal2Xi8UCp5iuymqEwuA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="cad140dc-94e8-4d38-b177-ce8cbd9fc989" SecureText="[Password]" Version="V4">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="f2976f25-76ca-4ca6-a333-3d757a97b57d" ContentHash="lHLl1Ye9mkSivCcZHnZ6sQ" DesignTimeRectangle="637, 574, 665, 58" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' name='LoginControl$Password' /&gt;" Guid="ced87528-b553-4fdd-938b-4f84115bc8f5" InformativeScreenshot="50ed2cb9f515b6203fe372e6c39b2fd1.png" Reference="asTqoD1sAk2-CQVBddQccA/i_0LLdLtk0O9FaRmtN_HBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cad140dc-94e8-4d38-b177-ce8cbd9fc989" Version="V4">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/login-legacy" CVScreenId="1640247b-bb2d-4756-95f5-2ac4927a7b51" ContentHash="MVjoq_DR0UqWPuPFHP31ig" DesignTimeRectangle="1399, 537, 155, 58" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btn-login' tag='INPUT' /&gt;" Guid="9487a487-04d5-4108-8154-117e21fd7f33" InformativeScreenshot="c7b5fddbf22eb1a6dd12878a2236a5b3.png" IsResponsive="True" Reference="asTqoD1sAk2-CQVBddQccA/N0JqObxK-ECbZDJEs4uD-A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" SearchSteps="Selector" Version="V4" />
+                                                  </uix:NClick.Target>
+                                                  <uix:NClick.VerifyOptions>
+                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionOptions.Retry>
+                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                    </uix:VerifyExecutionOptions>
+                                                  </uix:NClick.VerifyOptions>
+                                                </uix:NClick>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </uix:NApplicationCard.Body>
+                                          <uix:NApplicationCard.TargetApp>
+                                            <uix:TargetApp Area="-9, -9, 1938, 1158" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" BrowserType="Chrome" ContentHash="92QkqyuHaE6hxmKW-ReNwA" IconBase64="e73835327c446bba30c1d7cbfe6e36be86007fdd2ca1caaec6854672730d1092" InformativeScreenshot="ff3f20b404a94b2b9b02e55a0e6b76d1.jpg" Reference="asTqoD1sAk2-CQVBddQccA/ca7UbyfpQUuxKXPPrWx1eg" Selector="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" Url="https://bff.cloud.myitero.com/login-legacy" Version="V1" />
+                                          </uix:NApplicationCard.TargetApp>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NApplicationCard>
+                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                                          <ui:CommentOut.Body>
+                                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="1120,961.6" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1086.4,901.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_16" ScopeGuid="9b7dd08a-a1cf-4fe4-8856-cc1e46220257" Version="V2">
+                                                <uix:NApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="x:Object">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1052.8,621.6" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NCheckState DisplayName="Check if the specific application in a specific session is logged in" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1019.2,560" sap2010:WorkflowViewState.IdRef="NCheckState_5" OutUiElement="[ScreenElement]" Timeout="3" Version="V4">
+                                                        <uix:NCheckState.IfExists>
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="483.2,316.8" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,255.2" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;Logged in to Itero &quot; &amp; in_Country]" />
+                                                            </Sequence>
+                                                          </Sequence>
+                                                        </uix:NCheckState.IfExists>
+                                                        <uix:NCheckState.IfNotExists>
+                                                          <Sequence sap:VirtualizedContainerService.HintSize="483.2,177.6" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,116" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </Sequence>
+                                                          </Sequence>
+                                                        </uix:NCheckState.IfNotExists>
+                                                        <uix:NCheckState.Target>
+                                                          <uix:TargetAnchorable BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="4c125404-75e5-420f-b13d-534208f548fb" ContentHash="5SSi4Bm_zE2yzgS1WRaBMQ" CvElementArea="2199, 108, 51, 50" CvType="Icon" DesignTimeRectangle="2201, 110, 47, 47" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='logoutImage' parentclass='image-link-container' /&gt;" Guid="00f33090-6e53-43ec-9e25-284d41dbcbf9" ImageBase64="4130e937bb6cca6a4ddb9512804d1ac867337fcb65560443d57e80ba74038b5a" InformativeScreenshot="df8ff46bb84d0f972ce63b87107ad045.png" Reference="asTqoD1sAk2-CQVBddQccA/bAjjTo0o3EiIsCVNX7V1iQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard \xB7 My iTero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                                                        </uix:NCheckState.Target>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </uix:NCheckState>
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </uix:NApplicationCard.Body>
+                                                <uix:NApplicationCard.TargetApp>
+                                                  <uix:TargetApp Area="0, 0, 0, 0" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" Selector="&lt;html app='chrome.exe' title='Login \xB7 My iTero' /&gt;" Url="https://bff.cloud.myitero.com/login-legacy" Version="V1" />
+                                                </uix:NApplicationCard.TargetApp>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NApplicationCard>
+                                            </Sequence>
+                                          </ui:CommentOut.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:CommentOut>
+                                      </Sequence>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ui:InterruptibleDoWhile.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InterruptibleDoWhile>
+            </Sequence>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <Assign DisplayName="Assign - dictScreenElement" sap:VirtualizedContainerService.HintSize="886.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ui:UiElement">[io_dictScreenElements(Brand+"_"+in_Country)]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ui:UiElement">[ScreenElement]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="886.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;UiElement : &quot;+io_dictScreenElements(Brand+&quot;_&quot;+in_Country).get(&quot;url&quot;).ToString]" />
+  </Sequence>
+</Activity>

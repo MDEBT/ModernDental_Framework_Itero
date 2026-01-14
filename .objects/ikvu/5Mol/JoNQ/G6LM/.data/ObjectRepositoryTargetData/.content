@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lSbzJO4skk-Ci4XBx_6l3Q" Reference="KS1pCQkBfUiIxIHYYg9xKQ/G6LM5bYjpkqejo33qTeh1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="envistab2c.b2clogin.com/envistab2c.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize" CVScreenId="d4176c9f-b162-4141-bc75-d7551bca967f" DesignTimeRectangle="72, 325, 567, 47" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" Guid="238d0cde-3ee5-4977-80f0-4f26d95598d0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign up or sign in' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="1b41a20e202382234c81b33717755cef.png" xmlns="">0bNZoSfnuaEiQ4GdWOjErgw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

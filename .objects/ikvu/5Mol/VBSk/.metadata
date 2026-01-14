@@ -1,0 +1,13 @@
+﻿{
+  "Name": "StartScreen",
+  "Type": "Screen",
+  "Id": "VBSkBgeUaUuo2Idcpl7aKw",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/VBSkBgeUaUuo2Idcpl7aKw",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/5MolTRgJb0-53HwR_15bKg",
+  "Created": "2025-07-09T13:00:28.3776512Z",
+  "Updated": "2025-07-09T13:00:28.3776512Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

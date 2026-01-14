@@ -1,0 +1,14 @@
+﻿{
+  "Name": "access the service",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "k4y8pP4k80yj2IVyUHjDpA",
+  "Reference": "KS1pCQkBfUiIxIHYYg9xKQ/k4y8pP4k80yj2IVyUHjDpA",
+  "ParentRef": "KS1pCQkBfUiIxIHYYg9xKQ/VBSkBgeUaUuo2Idcpl7aKw",
+  "Created": "2025-11-06T10:41:04.2650795Z",
+  "Updated": "2025-11-06T10:41:04.2650795Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

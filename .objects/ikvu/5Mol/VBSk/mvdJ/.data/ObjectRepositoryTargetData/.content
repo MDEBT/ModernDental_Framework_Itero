@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AtAEkMsavEWdWaMrI_qJcQ" Reference="KS1pCQkBfUiIxIHYYg9xKQ/mvdJxRfhN0-YBUyZ4qf_Fg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="envistab2c.b2clogin.com/envistab2c.onmicrosoft.com/B2C_1A_signup_signin/api/SelfAsserted/confirmed" CVScreenId="ba7df821-05f8-475b-8575-b7fb7d0a56da" DesignTimeRectangle="72, 439, 135, 52" ElementType="Button" FullSelectorArgument="&lt;webctrl id='next' tag='BUTTON' /&gt;" Guid="b212a0cd-5476-415a-ac57-89100c61580f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sign up or sign in' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Visible" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="f4db2f4af8252c6dff1dfab4066b5101.png" xmlns="">0VJYrWu_rjEacZNAvLw-4YQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DpK872nGpkOw4ESj-AkH9Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/labs/home" DesignTimeRectangle="1002, 189, 85, 38" FullSelectorArgument="&lt;webctrl id='btn-search' tag='BUTTON' /&gt;" Guid="ca2e3f8d-67e0-4573-b9a6-1290495a7b59" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2768259bff4047b1aaa2edbb30a17499.png" xmlns="">0qA8zgxmhd0epd2kkf-skaw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

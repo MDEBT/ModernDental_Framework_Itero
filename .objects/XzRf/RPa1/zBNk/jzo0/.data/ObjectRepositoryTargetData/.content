@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uTtQ832-h0i-PcMBJ4C-Wg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="myaccount-us.aligntech.com/u/login" CVScreenId="bf964adb-1fb4-4e26-8dd2-cf8319368456" DesignTimeRectangle="808, 660, 320, 52" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="8f826c42-8602-46d4-91c3-5c29824034fe" ScopeSelectorArgument="&lt;html app='chrome.exe' title='myaccount-us.aligntech.com/u/login?state=hKFo2SByMHkwRXRZbG5QSjRPRlYtTUxTVGF3RG56ekNoTXBOa6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHBSdXNDOEZYM1Z6NzFlZlZlWkZLbVFMSVMwZDNPb0VDo2NpZNkgYlhZTW1BTXRNYjFnNUw4UVBjZUd5NVN1dDRIUFpRelg&amp;amp;ui_locales=en-US' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="beb8bdedd2ae004cd470dd53b7e08a33.png" xmlns="">0sxcwe_JJt06uxugn32fiaw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

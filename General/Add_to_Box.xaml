@@ -1,0 +1,378 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Add_to_Box" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:d="clr-namespace:DScoreAuthActivity;assembly=Login_DScoreAuthActivity" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB431B1541C_Upload_file_Create.Bundle;assembly=CB431B1541C_Upload_f.tI5i52098gA17BSfa3eB24Y2" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_CaseName" Type="InArgument(x:String)" />
+    <x:Property Name="in_ScanFileFolderLocation" Type="InArgument(x:String)" />
+    <x:Property Name="in_EntityID" Type="InArgument(x:Int32)" />
+    <x:Property Name="in_ProcessFilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_ExecutionID" Type="InArgument(x:String)" />
+    <x:Property Name="in_ProcessFolderLocation" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Add_to_Box.in_Config>
+    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" />
+  </this:Add_to_Box.in_Config>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Add_to_Box_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C8C235A62D2_Upload_file_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C8C235A62D2_Upload_file_Create.Bundle</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CB431B1541C_Upload_file_Create.Bundle</x:String>
+      <x:String>DScoreAuthActivity</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>C8C235A62D2_files_Tr.QgbOu37dDrB1XdqaA2NOoAE4</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>C8C235A62D2_Upload_f.2W5Vd3GHF0Q1qYym0345WS53</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>CB431B1541C_Upload_f.tI5i52098gA17BSfa3eB24Y2</AssemblyReference>
+      <AssemblyReference>Login_DScoreAuthActivity</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Add_to_Box" sap:VirtualizedContainerService.HintSize="849.6000000000001,2828" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="313236366029" Name="BoxFolder" />
+      <Variable x:TypeArguments="x:String" Name="BoxFile" />
+      <Variable x:TypeArguments="upr:IResource" Name="LPATH" />
+      <Variable x:TypeArguments="x:String" Name="insertBoxFilesQuery" />
+      <Variable x:TypeArguments="uiascb:Upload_file_Create" Name="getFileName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="571.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start : Upload to box&quot;]" />
+    <Assign DisplayName="Assign - FilePath" sap:VirtualizedContainerService.HintSize="571.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[BoxFile]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[in_ProcessFolderLocation+in_CaseName+".zip"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Assign - FilePath" sap:VirtualizedContainerService.HintSize="571.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[BoxFolder]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[in_Config("Labocast_boxUpload").ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="571.2,2403.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="534.4,2148.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="objectKey" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACtVXbW/bNhD+K4Q+tEBha3GbbK2BYIjdBHHXNF6ddh3mIqVF2uYikRpJJfEC//c9R0m2HDtpge7DliBwzHvh3XPPHcm76ETJVLi+0Z4rLW3UvYtGkttkziepLIVR94/PrWig88KvFu6idzyTUTeaqlRGrei1cnnKF9XiCRaZlc4UNglS6RKrcq+MhvRiLlmCDaX2zEyZx1fywrxhRZ4aLui/nrmNYXmxyBu7jIz151ZQmJ3gVc3g8C4aGqcq50OrMm4X0bIVvZd/FcpKEXW9LWSrTPWtSXilelakXuXcengeuDPp50YMuUUKnnYgo2VrlSgUEXCsxFa2sKFUpialyO5nuyHFhy2TLTNdZ+i8VXq2mePzVp3OL3JRZ/HWmKsip6zPJ3/KxNd1CP4vc5Vc4WMVS6n9kacFKb2XU4loEjl4DdmQ+zkWf3jUlNxTwaOTIk3DXuBCf65S8YA5knM/K3F419hs+WQaiHOoREvDxxOPpA+rnZbNSv6byO5gBUI3WW407IimwXIYAqcwAkGOErKpSP9eOmg7WYP/NUr1jKBNTgx4f3ybowUcBMdCebPNKEJii0zv5E2ZRi3dSHkwZUJNA64ejcM1k7fKeTCnSluKtXXMWE8yV9jQWkonaSFkaDee59bkVnEv4QCNSFFCY92Lwf5xdr54uG7/sSQaRBhJTB6xGhCb1X2gmue6z/U1d1sF5B6wTAqPBrlfxqMN0db44wKUwFeesrWTjWE4kU08YnaG8ZwugpzSYlyL8CVvNkHM4NzJpk+ISWc1aTMaeuWKBZml82yCNIM/0gV+b0bn79gXE6bLF+qrjPvguem36TM4yAq4SgxCm0jYyFUqMTu+7bK7ceD7OOqO0YPaW574OBfTcdRi42q4Qgg1JYJSp7O//+P+q5fjaLncQcQ19QbuVAkhdV2e75zz1cl0mVgJZolL7reKS/ET6JUKYNlZZEHMDHVSVDDPbuYqmQMX5coa33DU3KqZAg/SxVhX/lqVYqZmc1RnBajywWLVI1un5Aqck1AzrFAIbdoei2fcXWFpgZ/22VlbiKcXT09Pu1nWde7Tp0/RN/bDDqgyg35Wj2NV63wXWCkHx4qcdEVrrP8nMMlUZoDAta+lFsa25xJx2e2Zcfyw3gZcR5qZvJoepU64TmFA0MigthudHnXYnLv5/fsVhmSYpHMAvFontLSh5rW2yInQNEQtx0D18bNnz1i4PqDjnYOs0LQhGVd7P5Aeu1FpSmXJMKjLMpQKT119+2tn4qD2EuY2ap1wt/PguQ/yaTD7po4u7x47Lqn18ia6NMQy3nYSIyO0d4rDiYBsTL/GUVQdOLYiBQ3KkIam3AtCDMr1qC1DKfGnaUuwa2Ih+h9KvrC6hJ8z59EN3Iq1529A5ddC2s0ja8pTJx9GCXec88LvvNm/Uf7yQ2iicKnbwq+UBQptgbgO9YOie2I8QMFngBPikbTXKpExXbSucQpKF49+O9a+/Lff23/R6XUO9jv95u6X/TAb4x7ohyNlW9JiuyxjPzhQB8/3Xr2cHXV+6o2m/IXsPd///XmLfQRHEc1hJ96jX9jjmEBzHGpZgPxpiw2LSaoSXL0vzJXUhxoX4ND9oZQrZL82DUp4A1GBaJDWqigKmrZ20BAtP+MYG2iiQCJXJUN17qIqbDgOgYcbrdY4qY0Nj4SowFHn5+2JuaU/yCucF1VB+kVgNZGk+X7YrPSp93lJGLo8G6SLgCipVP0tRe1xkwj06KNweDKXovHuoLCX9XrPmhsn7cDLrFpfv3DCMwPvK3ByyJMrPpPNZDsHm9lWm2O0N1c3LDrxwSrNx7j7CBDnuSxZS8gFom2hcz66aDymymOnNn/L9axAInQK6HC43A7xdQQU8bzb24Mv7nrwe4V+7uMqPCO4KmZd4FbbS01yFR4jy38AUD0qMawPAAA=" ConnectionId="e09a6470-c13a-4825-9f5a-26b431b1541c" DisplayName="Upload File" sap:VirtualizedContainerService.HintSize="500.8,268" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="7c2ad626-c419-3a99-8a26-d0ebdf22790d">
+            <isactr:ConnectorActivity.FieldObjects>
+              <isactr:FieldObject Name="_file" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(BoxFile)]</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="parent_sub_id" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">[BoxFolder]</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="Jit_Upload_file" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="uiascb:Upload_file_Create">[getFileName]</OutArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="name" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+            </isactr:ConnectorActivity.FieldObjects>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </isactr:ConnectorActivity>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[getFileName.id]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+          <Assign DisplayName="Assign - in_ProcessFilePath" sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[in_ProcessFilePath]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[in_ProcessFilePath.Replace("10.214.17.30","vmedspfs01").Trim]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+          <d:DScoreGenerateKofaxObjectKeyActivity DisplayName="DScore – Generate Kofax ObjectKey" sap:VirtualizedContainerService.HintSize="500.8,112.8" sap2010:WorkflowViewState.IdRef="DScoreGenerateKofaxObjectKeyActivity_1" ObjectKey="[objectKey]" SourceString="[&quot;PDF&quot;+in_CaseName]" />
+          <Sequence DisplayName="Sequence DB" sap:VirtualizedContainerService.HintSize="500.8,672.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:DatabaseConnection" Name="DB_Connect" />
+              <Variable x:TypeArguments="x:String" Name="variable1" />
+              <Variable x:TypeArguments="x:Int32" Name="AffectedRowCount" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_2" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
+            <Assign DisplayName="Assign - Insert to box query" sap:VirtualizedContainerService.HintSize="433.6,115.2" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[insertBoxFilesQuery]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">["INSERT INTO [" &amp; in_Config("ModbotDB").ToString &amp; "].[dbo].[R_Box_Files] ( " &amp; _
+"    EntityID, Staging, UploadType, OpmerkingID, Door, Filepath, ExternalCaseNo, UploadFilename, BijKlant, BijOpdracht, " &amp; _
+"    UploadLocationID, Soort, Box_Token, UploadDT, isProcessed, ObjectKey, RobotName, ExecutionId, " &amp; _
+"    FirstExtracted, LastExtracted, ExtractedInLastRun, LastUpdated " &amp; _
+") VALUES ( " &amp; _
+"    '" &amp; in_EntityID.ToString &amp; "', " &amp; _
+"    NULL, " &amp; _
+"    '2', " &amp; _
+"    NULL, " &amp; _
+"    NULL, " &amp; _
+"    '" &amp; in_ProcessFilePath.ToString &amp; "', " &amp; _
+"    NULL, " &amp; _
+"    '" &amp; in_CaseName.ToString &amp; ".pdf', " &amp; _
+"    NULL, " &amp; _
+"    NULL, " &amp; _
+"    '1', " &amp; _
+"    NULL, " &amp; _
+"    NULL, " &amp; _
+"    NULL, " &amp; _
+"    'n', '" &amp; objectKey &amp; "', " &amp; _
+"    'Dexis_UiPath', " &amp; _
+"    '" &amp; in_ExecutionId.ToString &amp; "', " &amp; _
+"    GETDATE(), GETDATE(), 'y', GETDATE() " &amp; _
+");"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,373.6" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch.Try>
+                <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[AffectedRowCount]" DisplayName="Run Command" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="333.6,115.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_2" Sql="[insertBoxFilesQuery]">
+                  <ui:ExecuteNonQuery.Parameters>
+                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                  </ui:ExecuteNonQuery.Parameters>
+                </ui:ExecuteNonQuery>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,186.4" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[AffectedRowCount]" DisplayName="Run Command" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="333.6,115.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_3" Sql="[insertBoxFilesQuery]">
+                      <ui:ExecuteNonQuery.Parameters>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:ExecuteNonQuery.Parameters>
+                    </ui:ExecuteNonQuery>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+          <Sequence DisplayName="Update Query for Add to ERP -Update ERP" sap:VirtualizedContainerService.HintSize="500.8,747.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="DataBase_Condition_To Update " sap:VirtualizedContainerService.HintSize="467.2,664" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:DatabaseConnection" Name="DB_Connect" />
+                <Variable x:TypeArguments="x:Int32" Name="AffectedRowCount" />
+                <Variable x:TypeArguments="x:String" Name="update_ModbotERP" />
+                <Variable x:TypeArguments="x:String" Name="insertQbridge" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
+              <Assign DisplayName="Assign - Modbot" sap:VirtualizedContainerService.HintSize="433.6,115.2" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[update_ModbotERP]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["UPDATE [" + in_Config("ModbotDB").ToString + "].[dbo].[R_Scans_CaseList] " &amp; _
+          "SET " &amp; _
+          "    Box_Token = '" + getFileName.id + "', " &amp; _
+          "    LastExtracted = GETDATE() " &amp; _
+          "WHERE Case_Name = '" + in_CaseName + "';"]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,373.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                <TryCatch.Try>
+                  <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[AffectedRowCount]" DisplayName="Run Command -Update Command" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="333.6,115.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="[update_ModbotERP]">
+                    <ui:ExecuteNonQuery.Parameters>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:ExecuteNonQuery.Parameters>
+                  </ui:ExecuteNonQuery>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,186.4" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[AffectedRowCount]" DisplayName="Run Command -Update Command" ExistingDbConnection="[DB_Connect]" sap:VirtualizedContainerService.HintSize="333.6,115.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_4" Sql="[update_ModbotERP]">
+                        <ui:ExecuteNonQuery.Parameters>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:ExecuteNonQuery.Parameters>
+                      </ui:ExecuteNonQuery>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+            </Sequence>
+          </Sequence>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="537.6,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Already in box&quot;]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

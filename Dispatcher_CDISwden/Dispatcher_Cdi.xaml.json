@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Dispatcher_Cdi",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_Config",
+      "DisplayName": "in_Config",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "Dictionary",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_getInputFilePath",
+      "DisplayName": "in_getInputFilePath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "C:\\Users\\mayur.prakash.patil\\Desktop\\New_Setup\\Sweden\\8131.XLS",
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

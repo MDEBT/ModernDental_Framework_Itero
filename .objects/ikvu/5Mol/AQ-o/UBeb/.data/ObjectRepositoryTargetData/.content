@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dxdvEGrqB0SJ1jWF61pdmw" Reference="KS1pCQkBfUiIxIHYYg9xKQ/UBeb-VMHVUK9k3uc6Yh6hg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dentalconnect.dexis.com/main.php" CVScreenId="766d52f1-16eb-4f72-8d38-378d1a135b97" DesignTimeRectangle="606, 592, 86, 22" ElementType="Text" Guid="356bf7b1-be35-425d-8bb3-90d2522ebec7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Viewer · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f67b9ae63c3d16d93559b82f74bbf38f.png" xmlns="">0OywJj4rLWUmwaBnINvxl7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">KeyboardShortcut</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

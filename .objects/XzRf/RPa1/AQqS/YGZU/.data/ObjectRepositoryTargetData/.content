@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ysczTwPMJkaxw6-q4dCMsw" Reference="KS1pCQkBfUiIxIHYYg9xKQ/YGZUEEHNNUq7O7PRreGpOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/viewer-wrapper/rx/257457607/false" CVScreenId="71c9afe3-5413-4414-af60-5c17380018c9" CvElementArea="1642, 143, 223, 44" CvTextArea="1702, 155, 141, 18" CvTextArgument="Download Scan" CvType="Button" DesignTimeRectangle="1642, 144, 222, 43" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='download-scans-btn' tag='BUTTON' type='' class='eup-button' aaname='Download Scan' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Download Scan' /&gt;" Guid="7761d004-bbd2-4daa-83d2-cc7583e81d4a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Viewer · My iTero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="71c9afe3-5413-4414-af60-5c17380018c9" DesignTimeRectangle="1644, 145, 219, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl id='download-scans-btn' tag='BUTTON' class='eup-button' parentclass='download-scans-btn' /&gt;" Guid="f16f9899-332d-4782-bbeb-5b8d493288a8" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e1539d884167ff1e668be530116ffeda.png" xmlns="">0Ax7T6wYtlUubrYJYFcjomA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

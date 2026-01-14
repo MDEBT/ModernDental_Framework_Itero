@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0XUZemRoGE28oGjAlIjgiA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="bff.cloud.myitero.com/labs/home" CVScreenId="cea1ddd9-5d47-4d5e-b5c7-07009337e17c" DesignTimeRectangle="1499, 392, 194, 62" FullSelectorArgument="&lt;webctrl class='col-status' tableRow='1' tag='TD' parentclass='ng-star-inserted' /&gt;" Guid="17bae863-0cff-4e39-8d5b-6f3cd8c5e443" ScopeSelectorArgument="&lt;html app='chrome.exe' title='dashboard · My iTero' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1afa20773ec0659710a7ab8c473cc103.png" xmlns="">003cBz9VuqUqpE8s8jStF8g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="RuKkmwP5DUe-DNRFF_P1gQ" Reference="KS1pCQkBfUiIxIHYYg9xKQ/zBNkRDnhWkqXApZS2nIVzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1158" Arguments="[&quot;--profile-directory=&quot;&quot;&quot;+ChromeProfile+&quot;&quot;&quot;&quot;]" BrowserType="Chrome" ContentHash="OATGTso03kqRC54xuwcEmw" IconBase64="e73835327c446bba30c1d7cbfe6e36be86007fdd2ca1caaec6854672730d1092" Reference="KS1pCQkBfUiIxIHYYg9xKQ/zBNkRDnhWkqXApZS2nIVzw" Selector="&lt;html app='chrome.exe' url='https://bff.cloud.myitero.com/login?returnUrl=%2Flabs%2Fhome' /&gt;" Url="https://bff.cloud.myitero.com/login?returnUrl=%2Flabs%2Fhome" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="ff3f20b404a94b2b9b02e55a0e6b76d1.jpg" xmlns="">ff3f20b404a94b2b9b02e55a0e6b76d1.jpg</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="ChromeProfile" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,69 @@
+{
+  "DisplayName": "SendEmail",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Send_Email",
+      "DisplayName": "uipath-microsoft-outlook365",
+      "Category": null,
+      "Tooltip": "Send Email",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_Attachments",
+      "DisplayName": "in_Attachments",
+      "Category": null,
+      "Tooltip": "Provide a string with the full path to the file. If more than one, seperate with , and if no attachment then leave blank",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ToEmail",
+      "DisplayName": "in_ToEmail",
+      "Category": null,
+      "Tooltip": "Provide a string with the required email address. If more than one, seperate with ,",
+      "Placeholder": "thurston.stadler@incentro.com,thurston.stadler@incentro.com",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_SubjectEmail",
+      "DisplayName": "in_SubjectEmail",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Test Subject",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_BodyEmail",
+      "DisplayName": "in_BodyEmail",
+      "Category": null,
+      "Tooltip": "Body of the email provided in HTML format",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
