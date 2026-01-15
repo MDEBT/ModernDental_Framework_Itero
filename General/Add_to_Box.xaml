@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Add_to_Box" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:d="clr-namespace:DScoreAuthActivity;assembly=Login_DScoreAuthActivity" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB431B1541C_Upload_file_Create.Bundle;assembly=CB431B1541C_Upload_f.tI5i52098gA17BSfa3eB24Y2" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Add_to_Box" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB431B1541C_Upload_file_Create.Bundle;assembly=CB431B1541C_Upload_f.tI5i52098gA17BSfa3eB24Y2" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_CaseName" Type="InArgument(x:String)" />
@@ -123,7 +123,7 @@
       <AssemblyReference>Login_DScoreAuthActivity</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Add_to_Box" sap:VirtualizedContainerService.HintSize="849.6000000000001,2828" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Add_to_Box" sap:VirtualizedContainerService.HintSize="1472,2906" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="313236366029" Name="BoxFolder" />
       <Variable x:TypeArguments="x:String" Name="BoxFile" />
@@ -136,8 +136,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="571.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start : Upload to box&quot;]" />
-    <Assign DisplayName="Assign - FilePath" sap:VirtualizedContainerService.HintSize="571.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="573,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Start : Upload to box&quot;]" />
+    <Assign DisplayName="Assign - FilePath" sap:VirtualizedContainerService.HintSize="573,114" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[BoxFile]</OutArgument>
       </Assign.To>
@@ -145,7 +145,7 @@
         <InArgument x:TypeArguments="x:String">[in_ProcessFolderLocation+in_CaseName+".zip"]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Assign - FilePath" sap:VirtualizedContainerService.HintSize="571.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign DisplayName="Assign - FilePath" sap:VirtualizedContainerService.HintSize="573,114" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[BoxFolder]</OutArgument>
       </Assign.To>
@@ -153,9 +153,9 @@
         <InArgument x:TypeArguments="x:String">[in_Config("Labocast_boxUpload").ToString]</InArgument>
       </Assign.Value>
     </Assign>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="571.2,2403.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="573,2482" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="534.4,2148.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence sap:VirtualizedContainerService.HintSize="535,2230" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="objectKey" />
           </Sequence.Variables>
@@ -164,7 +164,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACtVXbW/bNhD+K4Q+tEBha3GbbK2BYIjdBHHXNF6ddh3mIqVF2uYikRpJJfEC//c9R0m2HDtpge7DliBwzHvh3XPPHcm76ETJVLi+0Z4rLW3UvYtGkttkziepLIVR94/PrWig88KvFu6idzyTUTeaqlRGrei1cnnKF9XiCRaZlc4UNglS6RKrcq+MhvRiLlmCDaX2zEyZx1fywrxhRZ4aLui/nrmNYXmxyBu7jIz151ZQmJ3gVc3g8C4aGqcq50OrMm4X0bIVvZd/FcpKEXW9LWSrTPWtSXilelakXuXcengeuDPp50YMuUUKnnYgo2VrlSgUEXCsxFa2sKFUpialyO5nuyHFhy2TLTNdZ+i8VXq2mePzVp3OL3JRZ/HWmKsip6zPJ3/KxNd1CP4vc5Vc4WMVS6n9kacFKb2XU4loEjl4DdmQ+zkWf3jUlNxTwaOTIk3DXuBCf65S8YA5knM/K3F419hs+WQaiHOoREvDxxOPpA+rnZbNSv6byO5gBUI3WW407IimwXIYAqcwAkGOErKpSP9eOmg7WYP/NUr1jKBNTgx4f3ybowUcBMdCebPNKEJii0zv5E2ZRi3dSHkwZUJNA64ejcM1k7fKeTCnSluKtXXMWE8yV9jQWkonaSFkaDee59bkVnEv4QCNSFFCY92Lwf5xdr54uG7/sSQaRBhJTB6xGhCb1X2gmue6z/U1d1sF5B6wTAqPBrlfxqMN0db44wKUwFeesrWTjWE4kU08YnaG8ZwugpzSYlyL8CVvNkHM4NzJpk+ISWc1aTMaeuWKBZml82yCNIM/0gV+b0bn79gXE6bLF+qrjPvguem36TM4yAq4SgxCm0jYyFUqMTu+7bK7ceD7OOqO0YPaW574OBfTcdRi42q4Qgg1JYJSp7O//+P+q5fjaLncQcQ19QbuVAkhdV2e75zz1cl0mVgJZolL7reKS/ET6JUKYNlZZEHMDHVSVDDPbuYqmQMX5coa33DU3KqZAg/SxVhX/lqVYqZmc1RnBajywWLVI1un5Aqck1AzrFAIbdoei2fcXWFpgZ/22VlbiKcXT09Pu1nWde7Tp0/RN/bDDqgyg35Wj2NV63wXWCkHx4qcdEVrrP8nMMlUZoDAta+lFsa25xJx2e2Zcfyw3gZcR5qZvJoepU64TmFA0MigthudHnXYnLv5/fsVhmSYpHMAvFontLSh5rW2yInQNEQtx0D18bNnz1i4PqDjnYOs0LQhGVd7P5Aeu1FpSmXJMKjLMpQKT119+2tn4qD2EuY2ap1wt/PguQ/yaTD7po4u7x47Lqn18ia6NMQy3nYSIyO0d4rDiYBsTL/GUVQdOLYiBQ3KkIam3AtCDMr1qC1DKfGnaUuwa2Ih+h9KvrC6hJ8z59EN3Iq1529A5ddC2s0ja8pTJx9GCXec88LvvNm/Uf7yQ2iicKnbwq+UBQptgbgO9YOie2I8QMFngBPikbTXKpExXbSucQpKF49+O9a+/Lff23/R6XUO9jv95u6X/TAb4x7ohyNlW9JiuyxjPzhQB8/3Xr2cHXV+6o2m/IXsPd///XmLfQRHEc1hJ96jX9jjmEBzHGpZgPxpiw2LSaoSXL0vzJXUhxoX4ND9oZQrZL82DUp4A1GBaJDWqigKmrZ20BAtP+MYG2iiQCJXJUN17qIqbDgOgYcbrdY4qY0Nj4SowFHn5+2JuaU/yCucF1VB+kVgNZGk+X7YrPSp93lJGLo8G6SLgCipVP0tRe1xkwj06KNweDKXovHuoLCX9XrPmhsn7cDLrFpfv3DCMwPvK3ByyJMrPpPNZDsHm9lWm2O0N1c3LDrxwSrNx7j7CBDnuSxZS8gFom2hcz66aDymymOnNn/L9axAInQK6HC43A7xdQQU8bzb24Mv7nrwe4V+7uMqPCO4KmZd4FbbS01yFR4jy38AUD0qMawPAAA=" ConnectionId="e09a6470-c13a-4825-9f5a-26b431b1541c" DisplayName="Upload File" sap:VirtualizedContainerService.HintSize="500.8,268" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="7c2ad626-c419-3a99-8a26-d0ebdf22790d">
+          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACtVXbW/bNhD+K4Q+tEBhe3GabK2BYIjdBHGX1F6ddh3mIqVF2uYikRpJJfEC//c9R0m2HDtpge7Dlhck5r3w7rnnjuR9dKpkIlzPaM+Vljbq3EcjyW0855NEFsKo88fnRtTXWe5XC/fRO57KqBNNVSKjRvRGuSzhi3LxFIvMSmdyGwepdLFVmVdGQ3o5lyzGhlJ7ZqbM4yN5Yd6wPEsMF/Rf19y1YHm5yGq7jIz1AysozHbwqmZweB8NjVOl86FVKbeLaNmI3su/cmWliDre5rJRpHpuYl6qXuSJVxm3Hp777kL6uRFDbpGCpx3IaNlYJQpFBNxSYitb2FAqU5NQZA+z3ZDijy2SLTJdZ+i8VXq2meN+o0rnF7mosjg35jrPKOvB5E8Z+6oOwf9VpuJr/FnFUmh/5ElOSu/lVCKaWPbfQDbkfo7FH540JfdU8Og0T5KwF7jQm6tEPGKO5NzPShzd1zZbPpsG4hwp0dDw8cwj6aNyp2W9kv8msjtYgdBNmhkNO6JpsByGwCmMQJDjmGxK0r+XDtpOVuB/jVJdI2iTUwPen9xlaAEHwYlQ3mwzipDYItM7eVukUUk3Uu5PmVDTgKtH43DN5J1yHswp05Zibd1irCuZy21oLaXjJBcytBvPMmsyq7iXcIBGpCihse7FYP80O18+Xrf/WBI1IowkJo9YDYjN6j5SzYHucX3D3VYBuQcsk9yjQR6W8XhDtDX+uAAl8JEnbO1kYxhOZB2PFrvAeE4WQU5pMa5F+JDVm6DF4NzJuk+ISWc1aVMaesWKBZml82yCNIM/0gV+b0eDd+yLCdPlC/VVyn3wXPdb9xkcpDlcxQahTSRs5CqVFju567D7ceD7OOqM0YPaWx77Viam46jBxuVwhRBqSgSldvvg4MeD16/G0XK5g4hr6vXdmRJC6qo83znny5PpKrYSzBJX3G8Vl+In0EsVwLKzyIKYGeqkqGCe3c5VPAcuyhU1vuWouVUzBR4ki7Eu/TVKxVTN5qjOClDlg8WqR7ZOyRU4p6FmWKEQmrQ9Fi+4u8bSAl/Ni4umEM8vn5+dddK049ynT5+ib+yHHVClBv2snsaq0vkusBIOjuUZ6YrGWP9PYJKJTAGBa95ILYxtziXistsz4+RxvQ24jjUzWTk9Cp1wncKAoJFBbTc6O26zOXfzh/crDMkwSecAeLVOaGlDzWttnhGhaYhajoHqWy9evGDh+oCOdw6yXNOGZFzu/Uh67FYlCZUlxaAuylAoPHfV7a+ZisPKS5jbqHXM3c6D5yHIZ8Hsmzq6uHvsuKRWy5vo0hBLedNJjIzQ3gkOJwKyNv1qR1F54NiSFDQoQxqacs8JMShXo7YIpcCfpi3BromF6H8o+dzqAn7OnEc3cCvWnr8BlV9zaTePrClPnHwcJdxxBrnfebN/q/zVh9BE4VK3hV8hCxTaAnEd6gdF98RWHwWfAU6IR9LeqFi26KJ1g1NQutbotxPti3973YOX7W778KDdq+9+1QuzsdUF/XCkbEsabJdly/cP1eH+3utXs+P2T93RlL+U3f2D3/cb7CM4imiO2q09+oY9jgk0x5GWOcifNNgwnyQqxtX70lxLfaRxAQ7dH0q5QvZr06CANxAViAZppYqioGkrBzXR8jOOsb4mCsRyVTJU5z4qw4bjEHi40WqNk9rY8EiIchx1ft6cmDv6hbzEeVEWpJcHVhNJ6u+HzUqfeZ8VhKHLs0G6CIiSStTfUlQeN4lAjz4Kh8dzKWrvDgp7Wa13rbl10va9TMv19QsnPDPwvgInhzy+5jNZT7Z9uJltuTlGe311wwI/ZFLk+RR5n0BikMmCtgRdYNoWPIPRZe01VZw7lfk517McmdAxoMPpcjfExxFgxPtubw++uOvC7zUauoe78IzwKql1iWttNzHxdXiNLP8BSUsIKa0PAAA=" ConnectionId="e09a6470-c13a-4825-9f5a-26b431b1541c" DisplayName="Upload File" sap:VirtualizedContainerService.HintSize="501,266" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="7c2ad626-c419-3a99-8a26-d0ebdf22790d">
             <isactr:ConnectorActivity.FieldObjects>
               <isactr:FieldObject Name="_file" Type="FieldArgument">
                 <isactr:FieldObject.Value>
@@ -194,7 +194,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </isactr:ConnectorActivity>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[getFileName.id]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="501,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[getFileName.id]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -202,7 +202,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign DisplayName="Assign - in_ProcessFilePath" sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+          <Assign DisplayName="Assign - in_ProcessFilePath" sap:VirtualizedContainerService.HintSize="501,114" sap2010:WorkflowViewState.IdRef="Assign_9">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[in_ProcessFilePath]</OutArgument>
             </Assign.To>
@@ -216,8 +216,17 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <d:DScoreGenerateKofaxObjectKeyActivity DisplayName="DScore – Generate Kofax ObjectKey" sap:VirtualizedContainerService.HintSize="500.8,112.8" sap2010:WorkflowViewState.IdRef="DScoreGenerateKofaxObjectKeyActivity_1" ObjectKey="[objectKey]" SourceString="[&quot;PDF&quot;+in_CaseName]" />
-          <Sequence DisplayName="Sequence DB" sap:VirtualizedContainerService.HintSize="500.8,672.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="If String.IsNullOrWhiteSpace(in_SourceString) Then&#xA;    Throw New ArgumentException(&quot;SourceString cannot be empty.&quot;)&#xA;End If&#xA;&#xA;Dim bytes As Byte() = System.Text.Encoding.UTF8.GetBytes(in_SourceString)&#xA;&#xA;Using sha As System.Security.Cryptography.SHA1 = System.Security.Cryptography.SHA1.Create()&#xA;    Dim hash As Byte() = sha.ComputeHash(bytes)&#xA;&#xA;    Dim sb As New System.Text.StringBuilder()&#xA;    For Each b As Byte In hash&#xA;        sb.Append(b.ToString(&quot;x2&quot;))&#xA;    Next&#xA;&#xA;    out_ObjectKey = sb.ToString() ' 40 chars&#xA;End Using&#xA;" DisplayName="Invoke Code - Kofax Object Key" sap:VirtualizedContainerService.HintSize="501,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SourceString">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;PDF&quot;+in_CaseName" />
+              </InArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_ObjectKey">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="objectKey" />
+              </OutArgument>
+            </ui:InvokeCode.Arguments>
+          </ui:InvokeCode>
+          <Sequence DisplayName="Sequence DB" sap:VirtualizedContainerService.HintSize="501,673" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:DatabaseConnection" Name="DB_Connect" />
               <Variable x:TypeArguments="x:String" Name="variable1" />
@@ -229,8 +238,8 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_2" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
-            <Assign DisplayName="Assign - Insert to box query" sap:VirtualizedContainerService.HintSize="433.6,115.2" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <ui:DatabaseConnect DisplayName="Connect to Database Modbot" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_2" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[in_Config(&quot;Connection_String_MODBOT&quot;).ToString]" DatabaseConnection="[DB_Connect]" />
+            <Assign DisplayName="Assign - Insert to box query" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_8">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[insertBoxFilesQuery]</OutArgument>
               </Assign.To>

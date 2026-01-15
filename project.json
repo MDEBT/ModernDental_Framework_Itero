@@ -4,7 +4,6 @@
   "description": "Framework for Modern Dental IOS process",
   "main": "Main.xaml",
   "dependencies": {
-    "Login_DScoreAuthActivity": "[70.0.0]",
     "UiPath.Database.Activities": "[1.10.1]",
     "UiPath.DataService.Activities": "[25.2.0]",
     "UiPath.Excel.Activities": "[2.24.4]",
@@ -21,7 +20,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.161.0",
-  "projectVersion": "1.1.2",
+  "projectVersion": "1.1.4",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
